@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 100px;
+}
+.container{
+    border: 6px solid orangered;
+    width: 1200px;
+}
+.anime{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    position: relative;
+    animation: anim 5s ease-in-out infinite alternate;
+}
+@keyframes anim{
+    from{
+        left: 0px;
+    }
+    to{
+        left: 990px;
+    }
+
+}
+

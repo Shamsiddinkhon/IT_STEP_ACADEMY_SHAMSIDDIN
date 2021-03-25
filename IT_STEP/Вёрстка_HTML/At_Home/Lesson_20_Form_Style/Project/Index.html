@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>First Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="form">
+                <form action="" method="POST">
+                    <div class="inputs">
+                        <label for="inputs" class="bold">Inputs</label>
+                    </div>
+                    <div class="line_1">
+                        <div class="first">
+                            <input type="text" id="inputs" placeholder="Enter some text">
+                        </div>
+                        <div class="second">
+                            <input type="text" placeholder="Valid text">
+                            <span class="icon_1"><img src="img/valid.png" alt=""></span>
+                        </div>
+                        <div class="third">
+                            <input type="text" placeholder="Invalid text">
+                            <span class="icon_2"><img src="img/invalid.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="toggle">
+                        <label for="toggle" class="bold">Check Boxes</label>
+                    </div>
+                    <div class="line_2">
+                            <div class="toggle_1">
+                                <label for="subscribe_1">Subscribe:</label>
+                                <input type="checkbox" class="tg_first" id="subscribe_1">
+                            </div>
+                            <div class="toggle_2">
+                                <label for="subscribe_2">Subscribe:</label>
+                                <input type="checkbox" class="tg_second" id="subscribe_2">
+                            </div>
+                    </div>
+                    <div class="gender">
+                        <label for="gender" class="bold">Radio Buttons</label>
+                    </div>
+                    <div class="line_3">
+                        <label for="gender">Gender:</label>
+                        <div class="male">
+                            <input type="radio" id="male" value="male" checked>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="female">
+                            <input type="radio" id="female" value="femala" class="female_inner">
+                        <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <label for="buttons" class="bold">Buttons</label>
+                    </div>
+                    <div class="line_4">
+                        <div class="group_1">
+                            <button>Active</button>
+                            <button>Hover</button>
+                            <button>Danger</button>
+                            <button>Hover</button>
+                            <button>Disable</button>
+                        </div>
+                        <div class="group_2">
+                            <button>+</button>
+                            <button>-</button>
+                        </div>
+                    </div>
+                    <div class="line_5">
+                        <div class="textarea">
+                            <label for="textarea" class="bold">Text area</label>
+                        </div>
+                        <textarea name="textarea" id="textarea" cols="" rows=""></textarea>
+                    </div>
+                    <div class="btn">
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        article{
+            background-color: #ccc;
+        }
+        .clearfix::before,
+        .clearfix::after{
+            content: "";
+            display: table;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+        }
+        .image_block{
+            float: left; 
+            padding-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <article class="clearfix">
+        <div class="image_block">
+            <img src="training_images/airplane.jpg" alt="Здесь должна быть какое-то картинка">
+        </div>
+        <div class="text-block">
+            <h1> Что-то про самолёта</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestiae nam soluta praesentium vitae nulla maxime repellat, iste facilis ipsum dignissimos corporis! Obcaecati tenetur atque numquam optio dolores, inventore perspiciatis. Rem nostrum sequi eveniet provident? Voluptate vitae soluta voluptatum natus magnam enim ullam saepe distinctio maiores reprehenderit accusamus, quibusdam adipisci et, eos expedita quasi iste ad vel eum illum? Adipisci iure placeat iste quo recusandae ex neque consectetur fugiat nisi sunt vero explicabo blanditiis excepturi animi, odio minima sapiente a eaque dolorum et ad quaerat consequatur officia. Sit, tempore? Consequuntur doloribus ducimus nostrum! Corrupti quia nulla adipisci suscipit consequatur perferendis ea, sapiente eveniet, obcaecati in, voluptatem quod dignissimos saepe ipsum? Ipsam voluptates sit inventore vitae expedita laboriosam dolor dignissimos, qui sint temporibus atque animi, repudiandae, sunt repellendus aperiam libero maiores ratione. Praesentium architecto dolore et, quasi odit velit deserunt temporibus, in ipsam saepe quis dolor! Quos excepturi ipsa veniam qui illum impedit totam? Voluptatum beatae architecto hic iure, nam quos tenetur vitae placeat autem ducimus explicabo unde perferendis quo necessitatibus incidunt ullam quasi expedita. Temporibus placeat similique ratione nisi, cum laudantium odit sint est odio. Ullam rem, omnis illo quis, suscipit adipisci, similique laudantium neque assumenda sequi nobis quam et.</p>
+        </div>
+</article>
+        <div class="new_block">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus corporis minima aliquid neque dolorum consequatur, quas molestiae eligendi, voluptas totam autem voluptates dignissimos voluptatibus? Voluptate minima quos repudiandae eum dignissimos, iste neque eligendi recusandae eaque. Iste veritatis provident enim ipsum assumenda expedita reprehenderit harum distinctio ut debitis. Voluptas, alias magnam!</p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0px;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: rgb(141, 141, 238);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.form{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(121, 121, 241);
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+.gen{
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+input{
+    padding: 5px;
+}
+label{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.ttype{
+    padding-top: 15px;
+}
+.type{
+    border: 1px solid rgb(93, 93, 170);
+    border-radius: 50px;
+}
+.type label:first-child{
+    display: flex;
+    justify-content: center;
+}
+
+.tchoose{
+    display: flex;
+    justify-content: space-around;
+}
+.sticks{
+    justify-content: space-around;
+}
+.tchoose div{
+    display: flex;
+}
+.tchoose div label{
+    position: relative;
+    top: -11px;
+    left: 10px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+select{
+    width: 70%;
+}
+img{
+    width: 200px;
+}
+input[type="image"]{
+    width: 100px;
+    height: 50px;
+}
+.bbtn{
+    display: flex;
+}
+
+input[type="text"]{
+    width: 100%;
+}
+input[type="text"]{
+    width: 100%;
+}
+input[type="tel"]{
+    width: 100%;
+}
+input[type="email"]{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+}
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.list input[type="checkbox"]{
+    position: relative;
+    left: -200px;
+
+}
+h1{
+    text-align: center;
+}
+p{
+    padding: 10px;
+    font-weight: bold;
+}
+button{
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+    box-shadow: 0 0 3px 3px rgba(10, 29, 54, 0.966);
+    outline: none;
+}
+button:hover{
+    background-color: rgb(68, 68, 163);
+    color: white;
+    transition: .5s;
+}
+.btn{
+    padding-top: 15px;
+}

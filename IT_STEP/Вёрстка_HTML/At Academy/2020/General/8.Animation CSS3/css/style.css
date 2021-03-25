@@ -1,0 +1,78 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Button{
+    font-size: 1rem;
+    display: inline-block;
+    color: #f5f5f5;
+    background-color: rgb(64, 131, 255);
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    transition: box-shadow 5s, ease-in 2s, letter-spacing 5s, linear 1s; /*active, :hover, :focus, visited*/
+}
+/*psevdo element polojeniya*/
+.Button:active{
+    box-shadow: none;
+    letter-spacing: 10px;
+    background-color: slateblue;
+}
+.Button:hover{
+    box-shadow: none;
+    letter-spacing: 10px;
+    background-color: red;
+}
+.square{
+    width: 150px;
+    height: 150px;
+    margin-top: 200px;
+    margin-left: 200px;
+    background-color: springgreen;
+    transform-origin: center bottom;
+    transition: all 1s ease;
+}
+/*transform: scale(1.5) rotate(45) translate( 50px, 100px) skew(30deg);*/
+
+.square:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0);
+    transform: scale(1.2) rotate(360deg);
+}
+/*povoriti*/
+.classback{
+    position: fixed;
+    left: -300px;
+    top: 50vh;
+    width: 300px;
+    height: 150px;
+    background-color: red;
+    transition: all 0.3s ease-in-out;
+}
+.callback:hover{
+    left: 0;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3);
+}
+.callback p{
+    color: black;
+    padding: 30px;
+}
+.callback:after{
+    content: "Обратная связь";
+    background-color: blueviolet;
+    text-align: center;
+    color: #f5f5f5;
+    border-radius: 0 0 8px 8px;
+    padding: 5px 0;
+    width: 150px;
+    position: absolute;
+    left: 300px;
+    top: 150px;
+    transform: rotate(-90deg) translateX(0);
+    transform-origin: top left;
+}

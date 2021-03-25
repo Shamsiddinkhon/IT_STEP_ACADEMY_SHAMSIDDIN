@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        .example{
+            height: 400px;
+            border: 3px solid grey;
+        }
+        .first{
+            background: url(bg/flower-bg.jpg);
+            background-repeat: repeat-y;
+        }
+        .second{
+            background: url(bg/-.jpg);
+            background-repeat: no-repeat;
+            background-size: auto 400px; /*cover,  */
+        }
+        .third{
+            background: url(bg/abstract-bg-2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;/*top vertikalnoye; gorizontalnoye bottom right; ili po prosentam 20% 40%; i v pixelyax mojno gorizontalnoye-300px vertikalnoye-200px;*/
+        }
+        .fourth{
+            background: url(bg/sky-bg.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;/* 2 osnavnix svoystv fixed; scroll;*/
+        }
+        .fifth{                     /*sozdaniye 2 i bolee fotografii*/
+            height: 600px;
+            background: url(bg/flower-texture.jpg) ,url(bg/golden-paper.jpg);
+            background-repeat: repeat-x, no-repeat;
+            background-size: auto, 500px;
+        }
+        .sixth{
+            background: url(bg/bg-city.jpg) 50px 0 no-repeat fixed;
+            
+        }
+        .seventh{
+            background: rgb(63,94,251);
+            background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+            /*po umolchaniyu sverxu vniz, imojno pomenya napravelinye po()*/ /*https://cssgradient.io/  https://flatuicolors.com/ sayt dlya sozdaniya gotovix gradientov; */
+        }
+        ul{
+        list-style: none;
+        width: 350px;
+        background-color: #61b15a;
+        padding: 0px;
+        }
+        ul li{
+            font-size: 18px;
+            background: url(bg/check2.png) 10px 17px no-repeat;
+            color:  #fff;
+        }
+        ul li:hover{
+            background-color: #ffce89;
+            color: #61b15a;
+
+        }
+        ul li a{
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            padding: 20px 0px 20px 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bachground</h1>
+    <div class="block">
+        <h3>background-repeat: repeat | no-repeat | repeat-x | repeat-y</h3>
+        <p>Это свойство повторяет фон</p>
+        <div class="first example">
+        
+        </div>
+
+        <div class="block">
+            <h3>background-size: x y  | auto | cover | contain</h3>
+            <p>Это свойство размер фона</p>
+            <div class="second example">
+        </div>
+
+         <div class="block" id="position">
+            <h3>background-position: top left| 50% 100% |50px 150px</h3>
+             <p>Это свойство устанавливает позицию фона</p>
+             <div class="third example">
+        </div>    
+
+        <div class="block">
+            <h3>background-attachment: fixed | scrollx</h3>
+             <p>Это свойство фиксирует фона</p>
+             <div class="fourth example">
+        </div>
+
+        <div class="block">
+            <h3>background-attachment: fixed | scrollx</h3>
+             <p>Это свойство фиксирует фона</p>
+             <div class="fifth example">
+        </div>
+
+        <div class="block">
+            <h3>background-attachment: fixed | scrollx</h3>
+             <p>Это свойство фиксирует фона</p>
+             <div class="sixth example">
+        </div> 
+        
+        <div class="block">
+            <h3>background: linear-gradient | (135deg, blue 50%,  green 75%)|;</h3>
+             <p>Это свойство фиксирует фона</p>
+             <div class="seventh example">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#position">Service</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Exit</a></li>
+            </ul>
+        </div>
+</body>
+</html> 

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            letter-spacing: 2px;
+            background-color: #ddd;
+            padding: 5px;
+            text-transform: uppercase;
+        }
+        header{
+            background-color:#923158;
+            padding: 30px 0 30px 100px;
+            margin-bottom: 10px;
+        }
+        nav, footer{
+            background-color: #6e1237;
+            padding: 15px 0px 15px 100px;
+            margin-bottom: 20px;
+        }
+        .clearfix::before,
+        .clearfix::after{
+            content: "";
+            display: table;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+        }
+        main{
+            float:right;
+            width: 60%;
+            padding: 30px 100px;
+            background-color:#b65b80;
+            margin-right: 10px;
+        }
+        section{
+            padding: 20px 0px 100px 80px;
+            background-color:#db92af;
+            margin: 20px 0px;
+        }
+        .A1{
+            float: left;
+            width: 29%;
+            padding: 50px 0px 20px 100px ;
+            margin-bottom: 10px;
+            height: 150px;
+            background-color: #b65b80;
+        }
+        .A2{
+            float: left;
+            width: 29%;
+            padding: 70px 0px 20px 100px ;
+            margin-bottom: 10px;
+            height: 220px;
+            background-color: #b65b80;
+        }
+        .A3{
+            float: right;
+            width: 10%;
+            margin-bottom: 10px;
+            height: 370px;
+            background-color: #b65b80;
+            white-space: pre;
+            text-align: center;
+        }
+        #main{
+            margin-bottom: 10px;
+        }        
+    </style>
+</head>
+<body>
+    <Article>
+        <header>Header</header>
+        <nav>Menu</nav>
+        <div id="main" class="clearfix">
+            <aside class="A3">
+
+                
+A
+S
+I
+D
+E
+
+3
+                
+            </aside>
+                <main>Main content
+                    <Section>Section 1</Section>
+                    <Section>Section 2</Section>
+                </main>
+            <aside class="A1">Aside 1</aside>
+            <Aside class="A2">Aside 2</Aside>
+            
+        </div>
+        <footer>Footer</footer>
+    </Article>
+</body>
+</html>

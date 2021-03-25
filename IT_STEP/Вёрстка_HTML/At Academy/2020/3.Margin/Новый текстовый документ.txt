@@ -1,0 +1,4 @@
+1margin vneshiy otstup
+2.padding vnutrenniye otsup
+
+ margin: 70px-up  100px-right 50px-down 60px-left; otstup

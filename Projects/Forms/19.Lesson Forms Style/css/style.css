@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: cornflowerblue;
+}
+.container{
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 0 15px;
+}
+.username{
+    position: relative;
+}
+.username label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    font-size: 1rem;
+    color: black;
+    transition: .5s;
+}
+/* ~ oznachayet vse elementi posle iput 
+  + oznachayet sledushiy odin element posle input*/
+.username input:focus + label {
+    top: -20px;
+    left: 0;
+    color: rgb(30, 80, 172);
+    /*chtobi ubrat placeholder*/ 
+}.username input::placeholder {
+    color: transparent;
+}
+/* label{
+    display: block;
+} */
+input[type=text] {
+    width: 100%;
+    border: none;
+    outline: none;
+    /* border-bottom: 1px solid red; */
+    transition: 1s;
+    background-color: transparent;
+}
+input[type=text]:focus{
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+.place{
+    padding-top: 10px;
+}
+.place::placeholder{
+    text-align: center;
+    color: green;
+}
+/*checkbox*/
+hr{
+    margin: 50px 0;
+}
+.check{
+    position: relative;
+}
+.checkbox{
+    display: inline-block;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid lightgreen;
+    border-radius: 2px;
+    width: 1rem;
+    height: 1rem;
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    transition: .5s;
+}
+.checkbox:checked{
+    outline: none;
+    background-color: lightgreen;
+    box-shadow: 0 0 2px 0 lightgreen;
+}
+.checkbox ~ label{
+    position: relative;
+    padding-left: 1.4rem;
+    top: 2px;
+}
+/*toggle*/
+.toggle_button{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3rem;
+    height: 1rem;background-color: rosybrown;
+    border-radius: 50px;
+    outline: none;
+    position: relative;
+    transition: .4s;
+}
+.toggle_button::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: saddlebrown;
+    border-radius: 100%;
+    outline: none;
+    box-shadow: 0 0 3px 0 rgba(0 , 0, 0, 0.5);
+    transition: .5s;
+}
+.toggle_button:checked{
+    background-color: royalblue;
+}
+.toggle_button:hover::before{
+    transform: scale(1.2);
+}
+.toggle_button:checked::before{
+    left: calc(3rem - 1.3rem);
+    background-color: royalblue;
+}
+/*Scroll*/
+.block{
+    height: 1000px;
+}
+::-webkit-scrollbar{
+    /* display: none;  chtobi spryatat scroll*/
+    width: 12px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-image: linear-gradient(to left bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+/*Search*/
+.search{
+    position: relative;
+    background-color: teal;
+    border-radius: 50px;
+    font-size: 16px;
+}
+.search_input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 5px;
+    margin-right: 5px;
+}
+.mod{
+    color: #aaa;
+    font-size: 1rem;
+    padding: 5px;
+}
+.searchbox{
+    display: flex;
+    align-items: center;
+}
+.search_input{
+    flex: 1 1 auto;
+    margin-right: 0.3rem;
+    color: #333;
+}

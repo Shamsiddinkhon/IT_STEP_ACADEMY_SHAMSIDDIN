@@ -1,0 +1,25 @@
+ <div id="LATEST_WORKS">
+        <div class="container">
+            <h2 class="line_header text-center">LATEST WORKS</h2>
+            <div id="row row2">
+                <nav class="menu-2">
+                     <a href="#">All</a>
+                     <a href="#">Branding</a>
+                     <a href="#">Desing</a>
+                     <a href="#">Developer</a>
+                    <a href="#">Strategy</a>
+                </nav>
+            </div>
+                <div class="column-3"><img src="img/1.jpg" alt="1" class="img"></div>
+                <div class="column-3"><img src="img/2.jpg" alt="2" class="img"></div>
+                <div class="column-3"><img src="img/3.jpg" alt="3" class="img"></div>
+                <div class="column-3"><img src="img/4.jpg" alt="4" class="img"></div>
+                <div class="column-3"><img src="img/5.jpg" alt="5" class="img"></div>
+                <div class="column-3"><img src="img/6.jpg" alt="6" class="img"></div>
+                <div class="column-3"><img src="img/7.jpg" alt="7" class="img"></div>
+                <div class="column-3"><img src="img/8.jpg" alt="8" class="img"></div>
+                <div class="column-3"><img src="img/9.jpg" alt="9" class="img"></div>
+            </div>
+    </div>
+</body>
+</html>

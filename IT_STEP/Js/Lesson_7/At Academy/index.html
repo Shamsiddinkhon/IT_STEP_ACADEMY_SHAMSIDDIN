@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS basic </title>
+    <style>
+        .main{
+            display: flex;
+            flex-direction: column-reverse;
+            
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 50px;
+        }
+        table{
+            border-collapse: separate;
+            border: 1px solid red;
+            
+        }td{
+            padding: 20px 50px;
+            margin: 0 10px;
+            border-collapse: separate;
+            border: 1px solid red
+        }
+    </style>
+</head>
+<body>
+    <script>
+        "use strict"
+        // first()
+        // function first (a,b) {
+        //    alert('first')
+        // }
+        
+        // second()
+        // var second = function (name) {
+        //     alert('second')
+        // }
+
+// var arr = [-10,20. -15, 28];
+// var avg = 0;
+// for (var i = 0; i < arr.length; i++) {
+//     avg += arr[i];
+// }
+
+// avg /= arr.length;
+// console.log('Avg = '+ avg)
+// alert('Avg = '+ avg)
+
+    // class Human{
+    //     constructor(name, age, hight) {
+    //     this.name = name;
+    //     this.age = age;
+    //     this.hight = hight;
+    //     }
+    //     // getInfo(firstName) {
+    //     //     return firstName = this.name
+    //     // }
+    // }
+
+    // var humans = [
+    // new Human ('Kolya', 23, 180),
+    // new Human ('Dasha', 19, 170),
+    // new Human ('Vanya', 18, 178),
+    // new Human ('Petya', 45, 197),
+    // new Human ('Vasya', 34, 168),
+    // new Human ('Djoni', 40, 160),
+    // new Human ('Katya', 37, 200),
+    // new Human ('Sonaya', 29, 172),
+    // new Human ('Jenya', 21, 175)
+    //     ]
+    //     console.log(humans)
+    </script>
+
+  <div class="main" id="main">
+        <div class="form">
+            <form action="" method="POST">
+                <div class="name">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" placeholder="First name">
+                </div><div class="last">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" placeholder="Last name">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function createTable()
+        {
+            var num_rows = document.getElementById('rows').value;
+            var num_cols = document.getElementById('cols').value;
+            var theader = '<table border="1">\n';
+            var tbody = '';
+            for( var i=0; i<num_rows;i++)
+            {
+                tbody += '<tr>';
+                for( var j=0; j<num_cols;j++)
+                {
+                    tbody += '<td>';
+                    tbody += 'Cell ' + i + ',' + j;
+                    tbody += '</td>'
+                }
+                tbody += '</tr>\n';
+            }
+            var tfooter = '</table>';
+            document.getElementById('wrapper').innerHTML = theader + tbody + tfooter;
+        }
+        </script>
+      
+        <form name="tablegen">
+        <label>Rows: <input type="text" name="rows" id="rows"/></label><br />
+        <label>Cols: <input type="text" name="cols" id="cols"/></label><br/>
+        <input name="generate" type="button" value="Create Table!" onclick='createTable();'/>
+        </form>
+        <div id="wrapper"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script type="text/javascript">
+        function createTable()
+        {
+            var num_rows = document.getElementById('rows').value;
+            var num_cols = document.getElementById('cols').value;
+            var theader = '<table border="1">\n';
+            var tbody = '';
+        
+            for( var i=0; i<num_rows;i++)
+            {
+                tbody += '<tr>';
+                for( var j=0; j<num_cols;j++)
+                {
+                    tbody += '<td>';
+                    tbody += 'Cell ' + i + ',' + j;
+                    tbody += '</td>'
+                }
+                tbody += '</tr>\n';
+            }
+            var tfooter = '</table>';
+            document.getElementById('wrapper').innerHTML = theader + tbody + tfooter;
+        }
+        </script>
+   
+   
+        <form name="tablegen">
+        <label>Rows: <input type="text" name="rows" id="rows"/></label><br />
+        <label>Cols: <input type="text" name="cols" id="cols"/></label><br/>
+        <input name="generate" type="button" value="Create Table!" onclick='createTable();'/>
+        </form>
+        
+        <div id="wrapper"></div> -->
+    
+
+
+</body>
+</html>

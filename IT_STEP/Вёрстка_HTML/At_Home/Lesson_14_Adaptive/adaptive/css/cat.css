@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+h1{
+    margin-top: 0px;
+}
+.container{
+    max-width: 1000px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(241, 235, 227);
+    padding: 20px;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.img{
+    flex: 0 0 30%;
+    margin-right: 15px;
+    text-align: right;
+}
+.img p{
+    padding: 15px;
+    margin: 0px;
+}
+.pic1{
+    background-color: rgb(68, 195, 245);
+    flex:0 0 100% ;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.pic2{
+    background-color: rgb(68, 195, 245);
+    flex:0 0 100% ;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.text{
+    flex: 0 0 64%;
+    margin-right: 30px;
+    margin-left: 15px;
+}
+.small{
+    display: none;
+}
+.second{
+    display: none;
+}
+
+/*600px to 800px*/
+@media screen and (max-width:800px) {
+    .img{
+        display: none;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 100%;
+    }
+    .second{
+        display: flex;
+        text-align: right;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    .flex {
+     
+    } 
+    .second .pic1{
+        margin-right: 20px;
+        flex: 0 0 45%;
+    }
+    .second .pic2{
+        margin-right: 20px;
+        flex: 0 0 45%;
+        margin-top: 0px;
+    }
+    .second p{
+        margin: 0px;
+        padding: 20px;
+    }
+    
+}
+@media screen and (max-width:600px) {
+
+    .second {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 100%;
+    }
+    .second .pic1 {
+        margin-bottom: 20px ;
+    }
+}

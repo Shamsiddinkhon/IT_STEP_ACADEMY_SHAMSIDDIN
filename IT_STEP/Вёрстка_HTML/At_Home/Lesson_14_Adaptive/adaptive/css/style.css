@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-color: rgb(29, 96, 97);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.container{
+    max-width: 700px;
+    margin: 0px auto;
+    height: 400px;
+}
+.content{
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+h1{
+    color: honeydew;
+}
+h5 a{
+    text-decoration: none;
+    color: rgb(43, 37, 37);
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.table{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 30px;
+}
+.table a img{
+    width: 80px; 
+    position: relative;
+        top: 5px;
+        left: 10px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.row div{
+    padding-left: 25px;
+}
+.row div a:first-child{
+    color: grey;
+    font-size: 12px;
+}
+.row div a:last-child{
+    font-size: 14px;
+}
+
+
+.hidden{
+    display: none;
+    align-items: center;
+}
+.hidden div{
+    padding-left: 25px;
+}
+.hidden div a:first-child{
+    color: grey;
+    font-size: 12px;
+}
+.hidden div a:last-child{
+    font-size: 14px;
+}
+
+/*599px*/
+@media screen and (max-width: 600px){
+    
+    .table{
+        display: flex;
+    }
+    .row{display: none;
+    }
+    .hidden{
+        display: flex;
+        position: relative;
+        top: -30px;
+        left: 25px;
+    }
+    .first div{
+        margin: 25px 0px ;
+        padding: 0px;
+    }
+    .second div{
+        margin: 25px 0px;
+    }
+    img{
+        width: 40px;
+        position: relative;
+        top: 5px;
+        left: 10px;
+    }
+}

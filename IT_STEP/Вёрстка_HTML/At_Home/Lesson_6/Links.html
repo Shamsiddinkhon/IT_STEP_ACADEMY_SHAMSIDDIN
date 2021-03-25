@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            max-width: 1000px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            padding: 40px;
+            margin: 50px 200px 50px 200px;
+        }
+        ul{
+            list-style-type: none;
+            background-color: gray;
+            padding: 0;
+            width: 250px;
+            list-style: none;
+            color: #dbe4eb;
+            font-size: 22px;
+        }
+        a{  
+            padding: 40px 0 40px 90px;
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        li:hover{
+            cursor: pointer;
+            background-color: #5e5e5e;
+            color: #dbe4eb
+        }
+        
+        .edit{
+            background: url(img/edit.png) 0 0 / 75px no-repeat;
+            background-position: 8%;
+        }
+        .favorites{
+            background: url(img/favorites.png) 0 0 / 75px no-repeat;
+            background-position: 8%;
+        }
+        .history{
+            background: url(img/history.png) 0 0 / 75px no-repeat;
+            background-position: 8%;
+        }
+        .security{
+            background: url(img/security.png) 0 0 / 75px no-repeat;
+            background-position: 10%;
+        }
+        .settings{
+            background: url(img/settings.png) 0 0 / 75px no-repeat;
+            background-position: 8%;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <ul>
+            <li><a href="#edit" class="edit">EDIT</a></li>
+            <li><a href="#favorites" class="favorites">FAVORITES</a></li>
+            <li><a href="#history" class="history">HISTORY</a></li>
+            <li><a href="#security" class="security">SECURITY</a></li>
+            <li><a href="#settings" class="settings">SETTINGS</a></li>
+        </ul>
+    </div>
+</body>
+</html>

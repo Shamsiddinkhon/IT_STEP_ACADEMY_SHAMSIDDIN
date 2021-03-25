@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: serif;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+table{
+    border-collapse: collapse;
+    margin: 100px auto;
+}
+td, th{
+
+    height: 50px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid ;
+}
+.italic{
+    font-style: italic;
+}
+.bold{
+    font-weight: bold;
+}
+sub{color: red;
+}
+.aspect{
+    background-color: lightgreen;
+    width: 70px;
+}
+.simple{
+    background-color: rgb(235, 144, 238);
+}
+.progressive{
+    background-color: rgb(229, 238, 144);
+}
+.respect{
+    background-color: rgb(144, 224, 238);
+}
+.perfect{
+    background-color: rgb(144, 146, 238);
+}

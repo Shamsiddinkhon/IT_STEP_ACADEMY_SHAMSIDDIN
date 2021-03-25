@@ -1,0 +1,28 @@
+// SCREEN 968px
+@mixin generalscreen() {
+    @media screen and (min-width: 968px){
+        $biggest-font-size: 3rem;
+        $h2-font-size: 1.75rem;
+        $h3-font-size: 1.25rem;
+        $normal-font-size: 1rem;
+        $small-font-size: .875rem;
+    }
+}
+// NAV GENERAL
+@mixin nav-screen {
+    @media screen and (max-width: 768px){
+          position: fixed;
+          top: -100%;
+          left: 0;
+          right: 0;
+          width: 90%;
+          margin: 0 auto;
+          padding: 2.5rem 0 0;
+          text-align: center;
+          background-color: $body-color;
+          transition: .4s;
+          box-shadow: 0 0 4px rgba(0,0,0,.1);
+          border-radius: 2rem;
+          z-index: $z-fixed;
+        }
+}

@@ -1,0 +1,155 @@
+@import "setup";
+@import "reset";
+@import "@media";
+
+
+.l-header{
+    background-color: $nav;
+        padding: 10px;
+        width: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    .nav{
+        @extend %container;
+        @include mobileMin(){
+        &__container{
+            @include flex(row,space-between,center);
+        }
+        &__logo{
+            h1{
+                font-weight: $medium;
+                color: white;
+                font-family: $font-logo;
+                font-style: italic;
+                font-size: 2rem;
+                letter-spacing: 0.1rem;
+            }
+        }
+        &__social,
+        &__items{
+            display: none;
+        }
+        &__burger{
+            color: white;
+        }
+        }  
+    }
+}
+.l-main{
+    padding-top: 70px;
+    background: linear-gradient(155deg, rgba(255,255,255,1) 2%, rgba(163,125,152,1) 35%, rgba(106,115,79,1) 70%, rgb(160, 177, 99) 100%);
+    .main{
+        @include mobileMin(){
+        &__container{
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .bgc{
+            background-color: rgba(0, 0, 0, 0.698) ;
+        }
+        &__img{
+            img{
+                filter: brightness(30%);
+            }
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+            filter: brightness(100%);
+            
+        }
+        &__about{
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -75%);
+            h4{
+                color: white;
+                font-weight: normal;
+                text-align: center;
+                font-size: 0.6rem;
+                z-index: 10;
+            }
+            h1{
+                color: white;
+                text-align: center;
+                font-size: 0.9rem;
+            }
+            h5{
+                color: white;
+                text-align: center;
+                font-size: 0.7rem;
+                font-weight: normal;
+            }
+        }
+
+        }
+        // @include hugeMin(){
+
+        // }
+    }
+    .portfolio{
+        @extend %container;
+        @include mobileMin(){
+        &__container{
+            @include flex(column,center,center);
+        }
+        &__link{
+            display: flex;
+        }
+        &__links{
+            widows: 32%;
+            padding: 20px;
+        }
+        table{
+            @include flex(row,center,center);
+            margin: 0 0px;
+            margin: 20px auto;
+            td{
+                padding: 10px 5px 2px 5px;
+                border-bottom: 1px solid red;
+                font-size: 10px;
+                text-align: left;
+                letter-spacing: 1.5px;
+                font-size: 0.6rem;
+                color: #fff;
+                a{
+                    background: linear-gradient(135deg, #3b38ce 50%, #800909 30%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-align: center;
+                }
+            }
+            th{
+                background: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-align: center;
+            }
+        }
+        }
+    }
+}
+.footer{
+    @extend %container;
+    @include mobileMin(){
+        &__container{
+            @include flex(row,space-between,center);
+            padding: 20px 10px;
+        }
+        &__social{
+            color: white ;
+        }
+        &__title{
+            h3{
+                background: linear-gradient(135deg, #d0ff00 20%, #ff5e00 70%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-align: center;
+            }
+        }
+    }
+}

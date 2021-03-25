@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-color: rgb(29, 96, 97);
+}
+.container{
+    max-width: 1000px;
+    margin: 0px auto;
+    background-color: rgb(49, 151, 153);
+}
+h5 a{
+    text-decoration: none;
+    color: rgb(75, 73, 73);
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.img::after{
+    content: "";
+    clear: both;
+}
+.table a img{
+    width: 60px; 
+}

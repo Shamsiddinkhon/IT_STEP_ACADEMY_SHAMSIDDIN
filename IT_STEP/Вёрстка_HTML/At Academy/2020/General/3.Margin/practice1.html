@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        .winter{
+            list-style-image: url(icons/winter_16.png);
+        }
+        .spring{
+            list-style-image: url(icons/spring_16.png);
+        }
+        .summer{
+            list-style-image: url(icons/summer_16.png);
+        }
+        .autuom{
+            list-style-image: url(icons/autumn_16.png);
+        }
+        .seasons::before{
+            content: ">";
+            padding-right: 20px;
+        }
+        p::first-letter{
+            font-size: 24px;
+            color: rgb(255, 94, 0);
+        }
+    </style>
+</head>
+<body class="fon">
+    <ul>
+        <li class="seasons">Зима
+            <ul>
+                <li class="winter">Декабрь</li>
+                <li class="winter">Январь</li>
+                <li class="winter">Февраль</li>
+            </ul>
+        </li>
+        <li class="seasons">Весна
+            <ul>
+                <li class="spring">Март</li>
+                <li class="spring">Апрель</li>
+                <li class="spring">Май</li>
+            </ul>
+        </li>
+        <li class="seasons">Лето
+            <ul>
+                <li class="summer">Июнь</li>
+                <li class="summer">Июль</li>
+                <li class="summer">Август</li>
+            </ul>
+        </li>
+        <li class="seasons">Осень
+            <ul>
+                <li class="autuom">Сентябрь</li>
+                <li class="autuom">Октябрь</li>
+                <li class="autuom">Ноябрьь</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ea, assumenda aut dolores deleniti sapiente eaque, temporibus impedit tenetur repellendus nemo enim, quia accusantium deserunt porro consequuntur. Minus, consequatur ipsa?</p> -->
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Basic 4</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+
+      var strLit = "Some String";
+      var strObj = new String("Some String");
+
+      console.log(strLit);
+      console.log(strObj);
+    </script>
+
+    <script>
+      "use strict";
+      var strLit = "Some String";
+      var strObj = new String("Some String");
+
+      console.log(strLit);
+      console.log(strObj);
+      console.log(strLit.substr(0, 5));
+      console.log(strLit.toUpperCase());
+      console.log(strLit.toLowerCase());
+    </script>
+    <!-- DATE -->
+    <script>
+      "use strict";
+      const today = new Date();
+      console.log(new Date());
+      console.log(today.getDate());
+    </script>
+
+    <script>
+      "use strict";
+      console.log(Math.pow(2, 10));
+    </script>
+
+    <script>
+      "use strict";
+      console.log(Math.trunc(Math.random(0, 1) * 10));
+    </script>
+
+    <script>
+      "use strict";
+      console.log(Math.round(Math.random(0, 1) * 101));
+    </script>
+    <!-- Time out -->
+    <script>
+      "use strict";
+      var audi = {
+        color: "red",
+        wheels: 4,
+        engine: {
+          volume: 2.0,
+          power: 225,
+        },
+      };
+
+      var bmw = {
+        color: "black",
+        wheels: 6,
+        engine: {
+          volume: 3.0,
+          power: 225,
+        },
+      };
+      // mojno sozdat Shablon
+      function Car(color, wheels, engine, volume, power) {
+        this.color = color;
+        this.wheels = wheels;
+        this.engine = engine;
+      }
+
+      var audi = new Car("blue", 4, 2.0, 225);
+      var bmw = new Car("red", 4, 2.0, 225);
+      var mercedes = new Car("black", 4, 2.0, 225);
+      console.log(audi);
+      console.log(bmw);
+      console.log(mercedes);
+      console.log(bmw.color);
+    </script>
+
+    <script>
+      "use strict";
+      function worker(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+      }
+      var newWorker = new worker("Muxriddin ", "Murodov");
+      var oldWorker = new worker("Shukurov ", "Shamsiddinxon");
+      console.log(newWorker);
+      console.log(oldWorker);
+    </script>
+
+    <script>
+      "use strict";
+      class Employee {
+        constructor(name, salary) {
+          this.name = name;
+          this.salary = salary;
+        }
+        raiseSalary(percent) {
+          this.salary *= 1 + percent / 100;
+        }
+      }
+      var user = new Employee("John", 1500);
+      user.raiseSalary(20);
+      console.log(user);
+    </script>
+
+    <script>
+      "use strict";
+
+      class Worker {
+        constructor(name, last, rate, days) {
+          this.name = name;
+          this.last = last;
+          this.rate = rate;
+          this.days = days;
+        }
+
+        getSalery() {
+            console.log(this.rate)
+            console.log(this.days)
+          return this.rate * this.days;
+        }
+        setRate(total) {
+          return this.rate + 5
+        }
+      }
+
+      var worker = new Worker('David', 'Dayd', 10, 31)
+      console.log(worker.getSalery())
+      console.log(worker.setRate())
+
+
+    </script>
+    <script>
+      "use strict";
+
+      class Worker {
+        constructor(name, last, rate, days) {
+          this.name = name;
+          this.last = last;
+          this.rate = rate;
+          this.days = days;
+        }
+
+        getSalery() {
+            console.log(this.rate)
+            console.log(this.days)
+          return this.rate * this.days;
+        }
+        setName(name) {
+             this.name = name
+        }
+      }
+      var worker = new Worker('David', 'Dayd', 10, 31)
+      console.log(worker.getSalery())
+      console.log(worker.setRate())
+      worker.setName('Shams')
+      console.log(worker)
+    </script>
+
+    <script>
+      "use strict";
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(70, 172, 155);
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.user, .menu{
+    font-size: 1.5rem;
+}
+.user:hover{
+    color: #fff;
+}
+.user{
+    font-size: 2.5rem;
+    color: #fff;
+}
+.menu a{
+    text-decoration: none;
+    color: rgba(255,255,255, 0.7);
+}
+.menu a:hover{
+    color: rgba(255,255,255, 1)
+}
+.icons_menu{
+    font-size: 2rem;
+ 
+}
+.icons_menu a{
+    color:rgba(255,255,255, 0.7);
+}
+.icons_menu a:hover{
+    color: rgba(255,255,255, 1)
+}
+/* ====DATA==== */
+.arrow{
+    font-size: 1.5rem;
+    color: rgb(70, 172, 155);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.arrow_in{
+    font-size: 1.4rem;
+}
+.center{
+    font-size: 2rem;
+}
+/* === table === */
+table{
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #98c8cf;
+}
+th, td{
+    padding: 10px;
+    border: 0.5px solid #cbeff6;
+    position: relative;
+}
+tr:first-child{
+    background-color: #bee5eb;
+}
+.mini_logo{
+    position: absolute;
+    top: 2px;
+    left: 185px;
+    background-color: rgb(100, 100, 226);
+    border-radius: 100px;
+    width: 20px;
+    height: 16px;
+    font-size: 11px;
+    color: white;font-weight: bold;
+}

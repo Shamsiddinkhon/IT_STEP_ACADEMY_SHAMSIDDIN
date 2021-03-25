@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    background-color: skyblue;
+}
+.container{
+    max-width: 1170px;
+    margin: 40px auto;
+    padding: 0;
+    
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin: 0 30px;
+}
+.pic1{
+    width: 350px;
+    height: 150px;
+    margin: 0;
+}
+h5{
+    margin: 0;
+    padding: 1px;
+}
+p{
+    padding: 10px;
+    margin: 0px;
+}
+.size1{
+    width: 350px;
+    height: 300px;
+    margin: 0;
+    background-color: snow;
+}
+.size2{
+    width: 350px;
+    height: 100px;
+    margin: 0;
+}
+.size3{
+    width: 350px;
+    height: 100px;
+    margin: 0;
+}
+.size4{
+    width: 350px;
+    height: 220px;
+    margin: 0;
+}
+.size5{
+    width: 350px;
+    height: 230px;
+    margin: 0;
+}
+.size6{
+    width: 350px;
+    height: 350px;
+    margin: 0;
+}
+.size7{
+    width: 350px;
+    height: 100px;
+    margin: 0;
+}
+.size8{
+    width: 350px;
+    height: 150px;
+    margin: 0;
+}
+.size9{
+    width: 350px;
+    height: 150px;
+    margin: 0;
+}
+.grey{
+    background-color: gray;
+    text-align: center;
+}
+
+.other{
+    margin-right: 10px;
+    margin-bottom: 10px;background-color: snow;
+}

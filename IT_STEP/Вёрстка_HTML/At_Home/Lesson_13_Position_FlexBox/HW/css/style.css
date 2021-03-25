@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 0 auto;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+header{
+    background-color: blueviolet;
+    padding: 20px;
+}
+menu{
+    background-color: brown;
+    padding: 20px;
+}
+
+main{
+    background-color: crimson;
+    padding: 20px;
+}
+section{
+    padding: 20px;
+    background-color: darkgreen;
+    margin: 10px;
+}
+footer{
+    background-color: cyan;
+    padding: 20px;
+    
+}
+pre{
+    font-weight: bold;
+    font-size: 20px;
+}
+.container div:first-child{
+    width: 100%;
+}
+.container div:nth-of-type(2){
+    width: 100%;
+}
+.container div:nth-of-type(3){
+    width: 25%;
+}
+.container div:nth-of-type(4){
+    width: 63%;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+}.container div:nth-of-type(5){
+    background-color: deeppink;
+    width: 10%;
+}
+.container div:nth-of-type(6){
+    width: 100%;
+    margin-top: 15px;
+}
+.container div:nth-of-type(3) aside:first-child{
+    padding: 30px;
+    background-color: darkred;
+}
+.container div:nth-of-type(3) aside:last-child{
+    padding: 65px 30px;
+    background-color: darksalmon;
+    margin-top: 10px;
+}

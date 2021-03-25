@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basic 2</title>
+</head>
+<body>
+    
+
+
+    <script>
+        "use strict"
+
+        // HW 1
+        // var user = {}
+        //     user.name = 'John',
+        //     user.lastname = 'Smith'
+        //     console.log(user)
+
+        //     user.name = 'Pete'
+        //     console.log('John to Pete')
+        //     console.log(user)
+        //     delete user.name;
+        //     console.log('Pete')
+        //     console.log(user)
+
+
+
+            // HW 2
+
+            function sumInput() { 
+
+                let numbers = [];
+
+                while (true) {
+
+                let value = prompt("Введите число", 0);
+
+                // Прекращаем ввод?
+                if (value === "" || value === null || !isFinite(value)) break;
+
+                numbers.push(+value);
+                }
+
+                let sum = 0;
+                for (let number of numbers) {
+                sum += number;
+                }
+                return sum;
+                }
+
+                alert( sumInput() );
+                console.log(sumInput)
+
+
+
+                // HW 3
+
+    //             var arr = [ ['ru'],['en'] ];
+    //                 let value = prompt("Введите язык.Choose language", 'ru');
+    //                 if (value == arr[0]){
+    //                     let day = prompt("Введите номер", 1);
+    //                     switch (day){
+    //                         case "1":
+    //                         alert("Понеделник")
+    //                     }
+    //                 }
+    //                 else if(value == arr[1]){
+    //                 let day = prompt("Введите номер", 3);
+    //                     switch (day){
+    //                         case "3":
+    //                         alert("Wednesday")
+    //     }
+    // }
+
+
+
+    </script>
+
+
+
+</body>
+</html>

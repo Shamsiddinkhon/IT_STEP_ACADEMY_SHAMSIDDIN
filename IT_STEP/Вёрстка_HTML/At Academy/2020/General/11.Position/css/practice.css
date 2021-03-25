@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+}
+body{
+    max-width: 1000px;
+    text-align: center;
+}
+.inline_block{
+    display: inline-block;
+    text-align: center;
+    font-family: serif;
+}
+ul{
+    list-style-type: none;
+    display: inline-block;
+}
+li{ 
+    width: 250px;
+    background-color: chartreuse;
+    text-align: center;
+}
+ul li a{
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    width: 250px;
+    padding: 20px 0;
+}
+.hidden{
+    position: relative;
+    overflow: hidden;   
+    visibility: hidden;
+}
+.hidden_2{
+    visibility: hidden;
+    position: relative;
+    overflow: hidden;
+    padding-left: 20px;
+}

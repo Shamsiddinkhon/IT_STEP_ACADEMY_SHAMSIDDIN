@@ -1,0 +1,15 @@
+@import "setup";
+
+
+
+
+
+.l-main {
+  overflow: hidden;
+  padding-top: 73px;
+}
+
+input, select, textarea {
+  border: 2px solid $text-color;
+  padding: 5px 10px;
+}

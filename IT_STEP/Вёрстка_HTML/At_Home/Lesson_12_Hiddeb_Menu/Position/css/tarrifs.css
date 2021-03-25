@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    max-width: 1000px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: rgb(236, 223, 223);
+}
+.container{
+}
+.price{
+    display: inline-block;
+    text-align: center;
+    width: 23%;
+    background-color: #fff;
+    padding: 0px;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: grey;
+    position: relative;
+    margin: 5px;
+    box-shadow: 0px 0px 3px 5px rgba(99, 98, 98, 0.14);
+}
+h3{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+pre{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 30px;
+    margin: 0;
+    padding: 0px;
+}
+span{
+    border: 1px solid white ;
+    padding: 10px 30px ;
+    border-radius: 10px;
+    color: black;
+}
+.purple{
+    background-color: rgb(237, 72, 243);
+}
+.orange{
+    background-color: rgb(243, 169, 72);
+}
+.blue{
+    background-color:rgb(72, 103, 243);
+}
+.green{
+    background-color: rgb(72, 243, 115);
+}
+.bottom{
+    border-bottom: 3px solid rgb(241, 44, 87);
+    margin: 0 -20px;
+}
+.bottom_2{
+    border-bottom: 3px solid rgb(243, 169, 72);
+    margin: 0 -20px;
+}
+.bottom_3{
+    border-bottom: 3px solid rgb(72, 103, 243);
+    margin: 0 -20px;
+}
+.bottom_4{
+    border-bottom: 3px solid rgb(72, 243, 115);
+    margin: 0 -20px;
+}
+
+

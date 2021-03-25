@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+//!  Font
+$font-logo:'Potta One', cursive;
+$font-family: 'Rubik', sans-serif;
+$main-size: 1rem;
+$secondary-size: 1.8rem;
+$big-size: 3rem;
+
+//!   Font Weightts
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+//!  Colors
+$nav: rgb(47, 40, 40);
+$bgc-color: grey;
+$text-color: #161212;
+$border-color: #d9d9d9;
+
+//!   Margins
+$mb-1: 1rem;
+$mb-2: 1.5rem;
+
+//! Box shadow
+$first-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px, rgba(0, 0, 0, 0.12) 5px 5px 2px;
+$second-shadow: rgba(0, 0, 0, 0.18) 5px 5px 2px;
+$third-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+//!  Line height
+$line-height: 1.5;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  font-size: 1rem;
+  background-color: $bgc-color;
+  color: #161212;
+  line-height: 1.6;
+}
+
+%container {
+  max-width: 1140px;
+  width: calc(100% - 3rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+// Flex
+@mixin flex($row,$between,$center) {
+    display: flex;
+    flex-direction: $row;
+    justify-content: $between;
+    align-items: $center;
+    
+}

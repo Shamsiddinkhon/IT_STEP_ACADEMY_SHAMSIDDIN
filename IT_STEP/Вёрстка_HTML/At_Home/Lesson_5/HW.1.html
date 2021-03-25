@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        article{
+            max-width: 1000px;
+            margin: 30px auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        h4,h3{
+            margin: 20px;
+            padding: 0 0 0 10px;
+            align-items: center;
+            text-align: center;        
+        }
+        .clearfix::before,
+        .clearfix::after{
+            content: "";
+            display: table;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+        }
+        .foods{
+            float: left;
+            color: black;
+            margin: 5px ;
+            text-decoration: bold;
+            border: 2px solid grey;
+            border-radius: 10%;
+
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <header class="clearfix">
+                <h1>What do I have in my fridge?</h1>
+                    <div class="foods">
+                        <h3><img src="/icons_1/Food_C247-128.png" alt="c247" ></h3>
+                               <h4>Pepper</h4>
+                            
+                    </div>
+
+                    <div class="foods">
+                        <h3><img src="/icons_1/Food_C240-128.png" alt="c240"></h3>
+                             <h4>Apple</h4>
+                             
+                    </div>
+
+                    <div class="foods">
+                        <h3><img src="/icons_1/Food_C217-128.png" alt="c2417"></h3>
+                            <h4>Cheese</h4>
+                    </div>
+
+                    <div class="foods">
+                        <h3><img src="/icons_1/Food_C245-128.png" alt="c245"></h3>
+                            <h4>Corn</h4>
+                    </div>
+
+                    <div class="foods">
+                        <h3><img src="/icons_1/Food_C239-128.png" alt="c39"></h3>
+                            <h4>Mushroom</h4>
+                    </div>
+
+                    <div class="foods">
+                        <h3><img src="/icons_1/Food_C238-128.png" alt="c238"></h3>
+                            <h4>Garlik</h4>
+                    </div>
+
+                    <div class="foods">
+                        <h3><img src="/icons_1/Food_C225-128.png" alt="c225"></h3>
+                            <h4>Beef</h4>
+                    </div>
+
+                    <div class="foods">
+                        <h3><img src="/icons_1/Food_C205-128.png" alt="c205"></h3>
+                            <h4>Fish</h4>
+                    </div>
+
+                    <div class="foods">
+                        <h3><img src="/icons_1/Food_C203-128.png" alt="c203"></h3>
+                            <h4>Eggs</h4>
+                    </div>
+
+                    <div class="foods">
+                        <h3><img src="/icons_1/Food_C235-128.png" alt="c235"></h3>
+                            <h4>Coriander</h4>
+                    </div>
+        </header>
+    </article>
+</body>
+</html>

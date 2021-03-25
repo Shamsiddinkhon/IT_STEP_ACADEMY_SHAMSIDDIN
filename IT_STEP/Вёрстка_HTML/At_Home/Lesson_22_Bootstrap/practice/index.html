@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <div class="container_fluid">
+        <div class="container">
+            <nav class="nav d-flex align-self-center justify-content-between" id="nav">
+                <div class="nav__logo pt-4 pb-4">
+                    <h1><a href="#">Flight - Search List</a></h1>
+                </div>
+                <div class="nav__menu d-flex align-self-center">
+                    <a href="#">Home</a>
+                    <p>/</p>
+                    <a href="#">Flight Search List</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <main>
+        <section class="container">
+            <form action="" method="POST">
+                <div class="froms d-flex flex-column">
+                    <div class="radio__check d-flex pt-3">
+                        <div class="form-check pr-5">
+                            <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
+                            <label for="exampleRadios1">
+                                One Way
+                            </label>
+                            </div>
+                            <div class="form-check">
+                            <input type="radio" name="exampleRadios" id="exampleRadios1" checked="">
+                            <label for="exampleRadios1">
+                                Round Trip
+                            </label>
+                            </div>
+                        </div>
+                        <div class="form__data d-flex justify-content-between pt-3">
+                            <div class="from d-flex">
+                                <input type="text" id="from" placeholder="From">
+                                <img src="assets/img/location.svg" alt="location" class="img">
+                            </div>
+                            <div class="to d-flex">
+                                <input type="text" id="to" placeholder="To">
+                                <img src="assets/img/location.svg" alt="location" class="img">
+                            </div>
+                            <div class="depart d-flex">
+                                <input type="text" id="date" placeholder="Depart Data">
+                                <img src="assets/img/calendar.svg" alt="calendar" class="img">
+                            </div>
+                            <div class="return d-flex">
+                                <input type="text" id="return" placeholder="Return Date">
+                                <img src="assets/img/calendar.svg" alt="calendar" class="img">
+                            </div>
+                            <div class="class">
+                                <select name="class" id="class">
+                                    <option value="1">Economy Class</option>
+                                    <option value="2">Bussines Class</option>
+                                </select>
+                            </div>
+                            <div class="btn">
+                            <button type="button" class="btn__inner">Search</button>
+                         </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="content">
+                <div class="container d-flex">
+                    <div class="d-flex pt-4 pb-4">
+                        <div class="filter">
+                            <h3 class="p-4">Filter</h3>
+                            <form action="" method="POST">
+                                <div class="checkbox">
+                                    <h5 class="pl-4 pb-3">Price</h5>
+                                    <div class="form-check pl-4 pb-1">
+                                        <input type="checkbox" id="stop">
+                                        <label for="stop">
+                                          Non Stop
+                                        </label>
+                                      </div>
+                                      <div class="form-check pl-4 pb-1">
+                                        <input type="checkbox" id="1+stop">
+                                        <label for="1+stop">
+                                          1 Stop
+                                        </label>
+                                      </div>
+                                      <div class="form-check pl-4 pb-1">
+                                        <input type="checkbox" id="2+stop">
+                                        <label for="2+stop">
+                                          2+ Stop
+                                        </label>
+                                      </div>
+                                </div>
+                                <div class="price d-flex flex-column">
+                                    <h5 class="p-4">Price</h5>
+                                    <div class="price__inner d-flex pl-4">
+                                        <div class="min">
+                                            <label for="min">Min:</label>
+                                            <div class="min__inner d-flex align-items-center">
+                                                <input type="text" name="min" id="min" placeholder="0">
+                                                <span>  $  - </span>
+                                            </div>
+                                        </div>
+                                        <div class="max">
+                                            <label for="max">Max:</label>
+                                            <div class="max__inner d-flex align-items-center">
+                                                <input type="text" name="max" id="min" placeholder="1000">
+                                                <span> $</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="airlines">
+                                    <h5 class="p-4">Airlines</h5>
+                                    <div class="air__checkbox">
+                                        <div class="form-check pl-4 pb-1">
+                                            <input type="checkbox" id="Asiana">
+                                            <label for="Asiana">
+                                              Asiana Airlines
+                                            </label>
+                                          </div>
+                                          <div class="form-check pl-4 pb-1">
+                                            <input type="checkbox" id="American">
+                                            <label for="American">
+                                              American Airlines
+                                            </label>
+                                          </div>
+                                          <div class="form-check pl-4 pb-1">
+                                            <input type="checkbox" id="Air Canada">
+                                            <label for="Air Canada">
+                                              Air Canada
+                                            </label>
+                                          </div>
+                                          <div class="form-check pl-4 pb-1">
+                                            <input type="checkbox" id="Air India">
+                                            <label for="Air India">
+                                              Air India
+                                            </label>
+                                          </div>
+                                          <div class="form-check pl-4 pb-1">
+                                            <input type="checkbox" id="Jet Airways">
+                                            <label for="Jet Airways">
+                                              Jet Airways
+                                            </label>
+                                          </div>
+                                          <div class="form-check pl-4 pb-1">
+                                            <input type="checkbox" id="Spicejet">
+                                            <label for="Spicejet">
+                                              Spicejet
+                                            </label>
+                                          </div>
+                                          <div class="form-check pl-4 pb-1">
+                                            <input type="checkbox" id="IndiGo">
+                                            <label for="IndiGo">
+                                              IndiGo
+                                            </label>
+                                          </div>
+                                          <div class="form-check pl-4 pb-4">
+                                            <input type="checkbox" id="Multiple Airlines">
+                                            <label for="Multiple Airlines">
+                                              Multiple Airlines
+                                            </label>
+                                          </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="table pt-4">
+                        <table>
+                            <tr>
+                                <th colspan="6">Dehli to Sydney</th>
+                            </tr>
+                            <tr>
+                                <th>Airlines</th>
+                                <th>Departure</th>
+                                <th>Duration</th>
+                                <th>Arrival</th>
+                                <th>Price</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>IndiGo <br>
+                                    <span class="gray__text">6E-2489</span>
+                                </td>
+                                <td>23:30 <br>
+                                    <span class="gray__text">Dehli</span>
+                                </td>
+                                <td>18h 55m <br>
+                                    <span class="gray__text">Non Stop</span>
+                                </td>
+                                <td>18:15 <br>
+                                    <span class="gray__text">Sydney</span>
+                                </td>
+                                <td>$980</td>
+                                <td>
+                                    <button>Book</button> <br>
+                                    <span class="gray__text"><a href="#" class="book__link">Fligt Details</a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>IndiGo <br>
+                                    <span class="gray__text">6E-2489</span>
+                                </td>
+                                <td>23:30 <br>
+                                    <span class="gray__text">Dehli</span>
+                                </td>
+                                <td>18h 55m <br>
+                                    <span class="gray__text">Non Stop</span>
+                                </td>
+                                <td>18:15 <br>
+                                    <span class="gray__text">Sydney</span>
+                                </td>
+                                <td>$980</td>
+                                <td>
+                                    <button>Book</button> <br>
+                                    <span class="gray__text"><a href="#" class="book__link">Fligt Details</a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>IndiGo <br>
+                                    <span class="gray__text">6E-2489</span>
+                                </td>
+                                <td>23:30 <br>
+                                    <span class="gray__text">Dehli</span>
+                                </td>
+                                <td>18h 55m <br>
+                                    <span class="gray__text">Non Stop</span>
+                                </td>
+                                <td>18:15 <br>
+                                    <span class="gray__text">Sydney</span>
+                                </td>
+                                <td>$980</td>
+                                <td>
+                                    <button>Book</button> <br>
+                                    <span class="gray__text"><a href="#" class="book__link">Fligt Details</a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>IndiGo <br>
+                                    <span class="gray__text">6E-2489</span>
+                                </td>
+                                <td>23:30 <br>
+                                    <span class="gray__text">Dehli</span>
+                                </td>
+                                <td>18h 55m <br>
+                                    <span class="gray__text">Non Stop</span>
+                                </td>
+                                <td>18:15 <br>
+                                    <span class="gray__text">Sydney</span>
+                                </td>
+                                <td>$980</td>
+                                <td>
+                                    <button>Book</button> <br>
+                                    <span class="gray__text"><a href="#" class="book__link">Fligt Details</a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>IndiGo <br>
+                                    <span class="gray__text">6E-2489</span>
+                                </td>
+                                <td>23:30 <br>
+                                    <span class="gray__text">Dehli</span>
+                                </td>
+                                <td>18h 55m <br>
+                                    <span class="gray__text">Non Stop</span>
+                                </td>
+                                <td>18:15 <br>
+                                    <span class="gray__text">Sydney</span>
+                                </td>
+                                <td>$980</td>
+                                <td>
+                                    <button>Book</button> <br>
+                                    <span class="gray__text"><a href="#" class="book__link">Fligt Details</a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>IndiGo <br>
+                                    <span class="gray__text">6E-2489</span>
+                                </td>
+                                <td>23:30 <br>
+                                    <span class="gray__text">Dehli</span>
+                                </td>
+                                <td>18h 55m <br>
+                                    <span class="gray__text">Non Stop</span>
+                                </td>
+                                <td>18:15 <br>
+                                    <span class="gray__text">Sydney</span>
+                                </td>
+                                <td>$980</td>
+                                <td>
+                                    <button>Book</button> <br>
+                                    <span class="gray__text"><a href="#" class="book__link">Fligt Details</a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>IndiGo <br>
+                                    <span class="gray__text">6E-2489</span>
+                                </td>
+                                <td>23:30 <br>
+                                    <span class="gray__text">Dehli</span>
+                                </td>
+                                <td>18h 55m <br>
+                                    <span class="gray__text">Non Stop</span>
+                                </td>
+                                <td>18:15 <br>
+                                    <span class="gray__text">Sydney</span>
+                                </td>
+                                <td>$980</td>
+                                <td>
+                                    <button>Book</button> <br>
+                                    <span class="gray__text"><a href="#" class="book__link">Fligt Details</a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>IndiGo <br>
+                                    <span class="gray__text">6E-2489</span>
+                                </td>
+                                <td>23:30 <br>
+                                    <span class="gray__text">Dehli</span>
+                                </td>
+                                <td>18h 55m <br>
+                                    <span class="gray__text">Non Stop</span>
+                                </td>
+                                <td>18:15 <br>
+                                    <span class="gray__text">Sydney</span>
+                                </td>
+                                <td>$980</td>
+                                <td>
+                                    <button>Book</button> <br>
+                                    <span class="gray__text"><a href="#" class="book__link">Fligt Details</a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>IndiGo <br>
+                                    <span class="gray__text">6E-2489</span>
+                                </td>
+                                <td>23:30 <br>
+                                    <span class="gray__text">Dehli</span>
+                                </td>
+                                <td>18h 55m <br>
+                                    <span class="gray__text">Non Stop</span>
+                                </td>
+                                <td>18:15 <br>
+                                    <span class="gray__text">Sydney</span>
+                                </td>
+                                <td>$980</td>
+                                <td>
+                                    <button>Book</button> <br>
+                                    <span class="gray__text"><a href="#" class="book__link">Fligt Details</a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>IndiGo <br>
+                                    <span class="gray__text">6E-2489</span>
+                                </td>
+                                <td>23:30 <br>
+                                    <span class="gray__text">Dehli</span>
+                                </td>
+                                <td>18h 55m <br>
+                                    <span class="gray__text">Non Stop</span>
+                                </td>
+                                <td>18:15 <br>
+                                    <span class="gray__text">Sydney</span>
+                                </td>
+                                <td>$980</td>
+                                <td>
+                                    <button>Book</button> <br>
+                                    <span class="gray__text"><a href="#" class="book__link">Fligt Details</a></span>
+                                </td>
+                            </tr>
+                          </table>
+                    </div>
+                </div>
+               <div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol{
+            list-style-type: none;
+            counter-reset: num;
+        }
+        li::before{
+            content: (num);
+            counter-increment: num;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <ol class="roman">
+        <li>
+            History
+            <ol class="arabic">
+                <li>Development</li>
+                <li>HTML Versions tmeline
+                    <ol>HTML draft version timeline</ol>
+                    <ol>XHTML versions</ol>
+                </li>
+            </ol>
+        </li>
+        <li>
+            Markup
+            <ol class="arabic">
+                <li>Elements</li>
+                <li><ol class="alpha">
+                    <li>Element examples</li>
+                    <li>Attributes</li>
+                </ol></li>
+                <li>Character and entity references</li>
+                <li>Data types</li>
+                <li>Document type declaration</li>
+            </ol>
+        </li>
+        <li>Semantic HTML</li>
+        <li>
+            Delivery
+            <ol class="arbic">
+                <li>HTTP</li>
+                <li>HTML e-mail</li>
+                <li>Naming conventions</li>
+                <li>HTML Application</li>
+            </ol>
+        </li>
+        <li>
+            HTML4 variations
+            <ol class="arabic">
+            <li>SGML-based versus XML-based HTML</li>
+            <li>Transitional versus strict</li>
+            <li>Frameset versus transitional</li>
+            <li>Summary of specification versions</li>
+            </ol>
+        </li>
+        <li>
+            HTML5 variants
+            <ol class="arabic">
+                <li>WHATWG HTML versus HTML5</li>
+            </ol>
+        </li>
+        <li>
+            Hypertext features not in HTML     
+        </li>
+        <li>WYSIWYG editors</li>
+        <li>See also</li>
+        <li>See also</li>
+        <li>External links</li>
+    </ol>
+
+</body>
+</html>

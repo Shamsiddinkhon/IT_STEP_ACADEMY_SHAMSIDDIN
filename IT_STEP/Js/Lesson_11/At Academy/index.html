@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Repetition</title>
+    <style>
+        body{
+            font-size: 1rem;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        .nav{
+            background-color: darkblue;
+        }
+        ul{
+            display: flex;
+            flex: row;
+            list-style: none;
+        }
+        
+        li{
+            list-style: none;
+        }
+        li:hover{
+            background-color: rgb(41, 155, 221);
+        }
+      
+
+        .sec{
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            color: black;
+            background-color: darkblue;
+            left: 0;
+            top: 38px;
+            padding: 0;
+            
+        }
+       
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            display: block;
+
+        }
+        a:hover{
+            color: rgb(233, 143, 24);
+        }
+        .block{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+<script>
+    // class PrintMachine { 
+    //     constructor(size, color, ffamily, about) {
+    //         this.size = size
+    //         this.color = color
+    //         this.ffamily = ffamily
+    //         this.about = about
+    //     }
+    //     print(text) {
+    //         console.log(text)
+    //         var p = document.createElement('p')
+    //         p.innerHTML = text
+    //         document.body.append(p)
+    //         document.getElementsByTagName('p')[0].style.color = this.color
+    //         document.getElementsByTagName('p')[0].style.fontSize = this.size
+    //         document.getElementsByTagName('p')[0].style.fontFamily = this.ffamily
+    //         document.getElementsByTagName('p')[0].style.fontStyle = this.about
+    //     }
+    // }
+    // var text = new PrintMachine('60px', 'blue', 'Arial', 'italic')
+    // text.print('teeeeeeeeeeeeeeeest')
+</script>
+
+
+
+<script>
+    class News{
+        constructor(header, paragraph, tags, date){
+            this.header = header
+            this.paragraph = paragraph
+            this.tags = tags
+            this.date = date
+        }
+        print(){
+            var html = ''
+            html += '<h1>'+this.header+'</h1>'
+            var dateArr = this.date.split('.')
+            var curDateArr = '10.03.2021'
+            curDateArr = curDateArr.split('.')
+            var date = dateArr[0]- curDateArr[0] 
+            html += '<p><small>' + date + 'days ago</small></p>'
+            html += '<p>' + this.paragraph + '</p>'
+
+            this.tags.forEach(el => {
+                html +='<span>#' + el + '</span>'
+            })
+            console.log(date)
+            document.body.innerHTML = html
+        }
+    }
+
+    var news = new News('What is lorem', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, optio.', ['lorem', 'ipsum', 'text'], '11.03.2021')
+    news.print()
+</script>
+
+<!-- <div class="container">
+    <nav class="nav" id="nav">
+        <ul class="menu" id="menu">
+            <li> <a href="#">Home</a></li>
+            <li > <a href="#">Categories</a>
+                <ul class="toogle sec" id="sec">
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Shoes</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div> -->
+
+<script>
+    // menu.onclick = function(event) {
+    //     event.target.nextElementSibling.classList.toogle('block')
+    // }
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  background: linear-gradient(155deg, white 2%, #a37d98 35%, #6a734f 70%, black 100%);
+  color: #161212;
+  line-height: 1.6;
+}
+
+.center {
+  text-align: center;
+}
+/*# sourceMappingURL=setup.css.map */

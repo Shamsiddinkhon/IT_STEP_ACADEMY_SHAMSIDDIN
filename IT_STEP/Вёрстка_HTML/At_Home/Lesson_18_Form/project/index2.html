@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Forms HW 2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="" method="POST">
+                <div class="username">
+                    <label for="username">Nick</label>
+                    <input type="text" name="username" placeholder="Nick">
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="dobirth">
+                    <label for="birth">Date of birthday</label>
+                    <input type="date" name="birth" id="birth">
+                </div>
+                <div class="gender">
+                    <div class="gn">
+                        <div><label for="gender">Gender</label></div>
+                        <div>
+                            <input type="radio" id="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="country">
+                    <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option value="1">Uzbekistan</option>
+                            <option value="2">Kazakhstan</option>
+                            <option value="3">Tadjikistan</option>
+                            <option value="4">Afganistan</option>
+                            <option value="5">Turkmenistan</option>
+                        </select>
+                </div>
+                <div class="skill">
+                    <span>Skills in year</span>
+                    <div><input type="number" id="skills" placeholder="0"></div>
+                    
+                    <div><input type="number" id="skills" placeholder="60"></div>
+                </div>
+                <div class="btn">
+                    <button><p>Send</p></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

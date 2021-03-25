@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  background-color: grey;
+  color: #161212;
+  line-height: 1.6;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+  color: #161212;
+  letter-spacing: .05rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+select {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+}
+/*# sourceMappingURL=style.css.map */
