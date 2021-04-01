@@ -35,35 +35,35 @@
 
 //  HW 2
 
-function changeRegister(str) {
-        let nums = "1234567890";
-        let abcd = "ABCDEFGHIJKLMNOPQRSTUVWXYZqwertyuiopasdfghjklzxcvbnmабвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
-        let result = [];
+// function changeRegister(str) {
+//         let nums = "1234567890";
+//         let abcd = "ABCDEFGHIJKLMNOPQRSTUVWXYZqwertyuiopasdfghjklzxcvbnmабвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
+//         let result = [];
 
-        if (str === null) {
-          alert("Tип данных – null");
-        } else if (str == "") {
-          alert("Tип данных – undefined");
-        } else if (
-          str.toUpperCase(str) === "TRUE" ||
-          str.toUpperCase(str) === "FALSE"
-        ) {
-          alert(str + " is Boolean");
-        } else {
-          for (var i = 0; i < str.length; i++) {
-            if (nums.includes(str[i])) {
-              alert(str + " is a number type");
-              break;
-            } else if (abcd.includes(str[i])) {
-              alert(str + " is a string type");
-              break;
-            }
-          }
-          return result.join("");
-        }
-      }
+//         if (str === null) {
+//           alert("Tип данных – null");
+//         } else if (str == "") {
+//           alert("Tип данных – undefined");
+//         } else if (
+//           str.toUpperCase(str) === "TRUE" ||
+//           str.toUpperCase(str) === "FALSE"
+//         ) {
+//           alert(str + " is Boolean");
+//         } else {
+//           for (var i = 0; i < str.length; i++) {
+//             if (nums.includes(str[i])) {
+//               alert(str + " is a number type");
+//               break;
+//             } else if (abcd.includes(str[i])) {
+//               alert(str + " is a string type");
+//               break;
+//             }
+//           }
+//           return result.join("");
+//         }
+//       }
 
-      document.writeln(changeRegister(str));
+//       document.writeln(changeRegister(str));
 
 
         
@@ -74,19 +74,19 @@ function changeRegister(str) {
 
 // HW 3
 
-// var year = prompt('Year: ');
-// var month  = prompt('Month: ');
-// var day = prompt('Day: ');
+var year = prompt('Year: ');
+var month  = prompt('Month: ');
+var day = prompt('Day: ');
 
-// var today = new Date();
-// var birthDate = new Date(year, month, day);
-// var age = today.getFullYear() - birthDate.getFullYear();
-// var m = today.getMonth() - birthDate.getMonth();
-// if(m < 0 || (m === 0 && today.getDate() < birthDate.getDate())){
-//     age--;
-// }
-//     alert('I am  ' +age );
-//     console.log(age)
+var today = new Date();
+var birthDate = new Date(year, month, day);
+var age = today.getFullYear() - birthDate.getFullYear();
+var m = today.getMonth() - birthDate.getMonth();
+if(m < 0 || (m === 0 && today.getDate() < birthDate.getDate())){
+    age--;
+}
+    alert('I am  ' +age );
+    console.log(age)
 
 
 
