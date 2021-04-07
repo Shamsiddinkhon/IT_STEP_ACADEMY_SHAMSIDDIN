@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(41, 73, 85);
+    color: blanchedalmond;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.containe{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0;
+}
+.blocks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+input{
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+label{
+    font-size: 1.2rem;
+    color: blanchedalmond;
+}
+h3{
+    color: blanchedalmond;
+}
+button{
+    padding: 10px 15px;
+    width: 630px;
+    margin-top: 10px;
+}

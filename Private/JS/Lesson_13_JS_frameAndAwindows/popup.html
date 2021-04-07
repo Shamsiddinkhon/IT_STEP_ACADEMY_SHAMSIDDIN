@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+</head>
+<body>
+    <h1>Popup</h1>
+    <div id="message"></div>
+    <div id="password"></div>
+    <div id="confirm"></div>
+
+    <script>
+        // window.addEventListener('message', function (e) {
+        //     console.log(e.data)
+        //     var str = 'Massage' + e.data
+
+
+
+        //     document.getElementById('message').innerHTML = str
+        // }) 
+
+        window.addEventListener('ready', function (e) {
+            console.log(e.data)
+            var str = e.data
+
+            document.getElementById('message').innerHTML = str
+        }) 
+
+
+
+
+
+
+
+        
+    </script>
+
+</body>
+</html>

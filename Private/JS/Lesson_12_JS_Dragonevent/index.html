@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropzone{
+            min-height: 200px;
+            border: 1px solid red;
+            border-radius: 15px;
+            padding: 15px;
+            margin-top: 25px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 1140px;
+            height: 50vh;
+            margin: 0 auto; 
+        }
+        .first{
+            display: flex;
+            flex-direction: column;
+            background-color: rosybrown;
+            padding: 20px 40px;
+        }
+        .first div {
+            padding: 10px 30px;
+            border: 3px solid black;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 1.5rem;
+        }
+        .two, .three, .four {
+            background-color: burlywood;
+            width: 280px;
+            padding: 10px 30px;
+            
+        }
+    </style>
+</head>
+<body>
+<!--     
+    <img src="./ball.png" id="ball"> -->
+    <script>
+        ball.onmousedown = function (event) {
+            ball.style.position = 'absolute'
+            console.log(event)
+            moveTo(event)
+            document.body.appendChild(ball)
+            ball.style.zIndex = 1000;
+        }
+
+        function moveTo(event) {
+            console.log(ball.style.left)
+            ball.style.left = event.pageX - ball.offsetWidth / 2 + 'px';
+            ball.style.left = event.pageY - ball.offsetWidth / 2 + 'px';
+        }
+        document.onmousemove = function (event) {
+            moveTo(event)
+        }
+        ball.onmouseup = function (event) {
+            console.log(event)
+            moveTo(event)
+            ball.onmousemove = null;
+            ball.onmouseup = null
+
+        }
+
+
+        ball.ondragstart = function () {
+            return false;
+        }
+        
+    </script>
+
+<div class="container">
+        <div class="dropzone first">
+            <!-- <img src="./ball.png" id="ball1" class="ball">
+            <img src="./ball.png" id="ball2" class="ball">
+            <img src="./ball.png" id="ball3" class="ball">
+            <img src="./ball.png" id="ball4" class="ball"> -->
+                <div class="ball" id="ball2">Item 1</div>
+                <div class="ball" id="ball3">Item 2</div>
+                <div class="ball" id="ball4">Item 3</div>
+                <div class="ball" id="ball5">Item 4</div>
+        </div>
+        <div class="dropzone two">
+    
+        </div>
+        <div class="dropzone three">
+    
+        </div>
+        <div class="dropzone four">
+</div>
+
+    </div>
+
+    <script>
+        var draggedItem = null;
+        ball = document.querySelectorAll('.ball')
+        console.log(ball)
+        ball.forEach( element => {
+            element.ondragstart = function (e) {
+            
+                e.dataTransfer.setData('id', e.target.id)
+            
+            }
+        });
+
+        ball.ondragstart = function () {
+            console.log('drag-star')
+            draggedItem = event.target;
+        }
+        ball.ondragend = function () {
+            console.log('drag-end')
+        }
+
+        var dropzones = document.querySelectorAll('.dropzone')
+        console.log(dropzones)
+
+        dropzones[1].ondragover = function (event) {
+            event.preventDefault();
+            event.target.style.borderColor = 'green'
+            event.target.style.borderWidth = '5px'
+        }
+        
+        dropzones[1].ondrop = function(event) {
+            var id = event.dataTransfer.getData('id')
+            console.log(id)
+            var draggedItem = document.getElementById(id)
+            draggedItem.parentNode.removeChild(draggedItem)
+            event.target.appendChild(draggedItem)
+        }
+        dropzones[2].ondragover = function (event) {
+            event.preventDefault();
+            event.target.style.borderColor = 'green'
+            event.target.style.borderWidth = '5px'
+        }
+        dropzones[2].ondrop = function(event) {
+            var id = event.dataTransfer.getData('id')
+            console.log(id)
+            var draggedItem = document.getElementById(id)
+            draggedItem.parentNode.removeChild(draggedItem)
+            event.target.appendChild(draggedItem)
+        }
+        dropzones[3].ondragover = function (event) {
+            event.preventDefault();
+            event.target.style.borderColor = 'green'
+            event.target.style.borderWidth = '5px'
+        }
+        dropzones[3].ondrop = function(event) {
+            var id = event.dataTransfer.getData('id')
+            console.log(id)
+            var draggedItem = document.getElementById(id)
+            draggedItem.parentNode.removeChild(draggedItem)
+            event.target.appendChild(draggedItem)
+        }
+    </script>
+
+<div class="container">
+    
+        <!-- <div class="first">
+            <div class="item_1">Item 1</div>
+            <div class="item_2">Item 2</div>
+            <div class="item_3">Item 3</div>
+            <div class="item_4">Item 4</div>
+        </div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+</div> -->
+<script>
+
+</script>
+</body>
+</html>

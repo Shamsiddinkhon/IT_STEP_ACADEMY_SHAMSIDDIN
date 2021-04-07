@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        JS_XSS
+    </title>
+    <style>
+        body{
+            background-color: rgb(180, 132, 226);
+        }
+        iframe{
+            width: 100%;
+            height: 49vh;
+        }
+        .ww{
+            width: 100%;
+            height: 40vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="ww">
+        <h1>PostMassage</h1>
+        <button id="btn_iframe">Send</button>
+        <button id="btn_popup">Open Popup</button>
+        <button id="btn_send">Send to popup</button>
+        <div class="forms">
+            <input type="text" id="login"> 
+            <input type="password" id="password">
+            <input type="password" id="confirm">
+            <button id="btn_about">Data</button>
+        </div>
+    </div>
+
+    <iframe src="iframe.html" frameborder="0" id="iframe"></iframe>
+    <script>
+    
+        var popup = null
+        var message = 'Text 111'
+        // document.getElementById('btn_iframe').onclick = function () {
+        //     // console.log('click')
+        //     var iframe = document.getElementById('iframe')
+
+        //     iframe.contentWindow.postMassage(massage,document.location);
+        // }
+
+        //     document.getElementById('btn_iframe').addEventListener('click', function () {
+        //         // console.log('click')
+
+        //     var iframe = document.getElementById('iframe')
+
+        //     iframe.contentWindow.postMessage(message,document.location)
+        // })
+
+
+
+
+        document.getElementById('btn_popup').addEventListener('click', function() {
+        //    popup = window.open('popup.html') 
+        popup = window.open('popup.html', 'width=400',  'height=200') 
+        
+        //    console.log(popup)
+
+        })
+
+        // document.getElementById('btn_send').addEventListener('click', function() {
+        //     popup.postMessage(message, '*')
+        // })
+            
+
+        var text = document.getElementById('login').value
+        var password = document.getElementById('password').value
+        var passwordCon = document.getElementById('confirm').value
+        var ready = text + password + passwordCon
+        console.log('ready')
+
+        document.getElementById('btn_popup').addEventListener('click', function() {
+            
+        //    popup = window.open('popup.html') 
+        popup = window.open('popup.html', 'width=400',  'height=200') 
+        //    console.log(popup)
+      
+        })
+            document.getElementById('btn_about').addEventListener('click', function() {
+            //    popup.postMessage(ready,'*')
+            })
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+   
+
+</script>
+    
+</body>
+</html>
