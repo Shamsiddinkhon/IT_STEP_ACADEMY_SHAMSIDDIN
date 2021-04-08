@@ -66,4 +66,4 @@ btn.onclick = function (e) {
 
 }
 
-if(e.ctrlKey || e.key == "H")
+// if(e.ctrlKey || e.key == "H")
