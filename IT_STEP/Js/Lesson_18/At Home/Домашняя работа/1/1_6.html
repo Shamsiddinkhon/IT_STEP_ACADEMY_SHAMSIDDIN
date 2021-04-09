@@ -44,9 +44,6 @@
         }
         .comment__one{
             display: none;
-            position: absolute;
-            top: 0;
-            left: 0;
             background-color: red;
             padding: 10px 15px;
             margin: 20px 0;
@@ -60,11 +57,11 @@
             font-size: 1.1rem;
         }
 
-        .first{
+        /* .first{
             position: absolute;
             top: 100px;
             left: 50px;
-        }
+        } */
         .first,.second{
             display: flex;
             flex-direction: column;
@@ -134,7 +131,6 @@
         })
         $(".btn__one").on("mouseout", function () {
             $(".comment__one").css("display", "none")
-            $(".comment__one").css("top", -50 )
 
         })
 

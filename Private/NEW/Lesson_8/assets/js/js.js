@@ -36,20 +36,22 @@ xhr.open("GET", api)
 xhr.onload = function () {
     console.log(JSON.parse(xhr.response))
     let date = JSON.parse(xhr.response)
-    document.getElementsByClassName("country")[0].innerHTML = date.location.name
-    // document.getElementsByClassName("img")[0].innerHTML = date.current.weather_icons
-    document.getElementsByClassName("mist")[0].innerHTML = date.current.wind_degree
+    document.getElementsByClassName("country")[0].innerHTML = date.location.name + ", " + date.location.country
+    document.getElementsByClassName("mist")[0].innerHTML = date.current.weather_descriptions
     let img = document.createElement("div")
     img.innerHTML = `<img src="${date.current.weather_icons}" alt="">`
     document.getElementsByClassName("img")[0].append(img)
 
-    document.getElementsByClassName("temperature")[0].innerHTML = date.current.temperature
+    document.getElementsByClassName("temperature")[0].innerHTML = date.current.temperature + "°"
 
     document.getElementsByClassName("date")[0].innerHTML = date.location.localtime
 
-    document.getElementsByClassName("wind")[0].innerHTML = date.current.wind_degree
+    document.getElementsByClassName("wind")[0].innerHTML = "Wind: " + date.current.wind_speed + " kph"
 
-    document.getElementsByClassName("precip")[0].innerHTML = date.current.wind_degree
+    document.getElementsByClassName("precip")[0].innerHTML = "Precip: " + date.current.wind_degree + "°"
+
+    document.getElementsByClassName("pressure")[0].innerHTML = "Pressure: " + date.current.pressure + " mb"
+
 }
 
 xhr.send()
