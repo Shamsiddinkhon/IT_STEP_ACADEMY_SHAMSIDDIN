@@ -1,0 +1,8 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+div{
+    margin: 20px 0;
+}
