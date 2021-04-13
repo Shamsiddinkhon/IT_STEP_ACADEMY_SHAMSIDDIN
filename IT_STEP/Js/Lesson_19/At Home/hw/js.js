@@ -60,14 +60,13 @@ btn.onclick = function (e) {
 		let section__three = document.getElementById("section__three")
 		
 		let details = document.getElementById("details")
-		details.classList.add("details")
 			console.log(details)
 			details.innerHTML =`
 			<div class"detail__img" id="detail__img">
 				<img src="${img}" alt="${img}">
 			</div>
 			
-			<div id="detail__about"> 
+			<div class"detail__about" id="detail__about"> 
 				<div> 
 					<h5>Title: ${obj.Title}</h5>
 				</div>
