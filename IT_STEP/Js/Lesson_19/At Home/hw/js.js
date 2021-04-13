@@ -2,36 +2,32 @@ let name = document.getElementById("title");
 let section = document.getElementById("section");
 let btn = document.getElementById("btn");
 
-let block = document.getElementById("block")
+let block = document.getElementById("block");
 
 btn.onclick = function (e) {
   e.preventDefault();
   let xhr = new XMLHttpRequest();
 
-	
-
   xhr.open("GET", `http://www.omdbapi.com/?apikey=585a4221&t=${name.value}`);
   xhr.onload = function () {
     let obj = JSON.parse(xhr.response);
     console.log(obj);
-	
-	let second__block = document.getElementById("second__block")
-	
-	let type = obj.Type
-	let title = obj.Title
-	let img = obj.Poster
-	let year = obj.Year
-	
-	//console.log(type)
-	//console.log(title)
-	//console.log(img)
-	//console.log(year)
-	
-	
-	
-	
-	let section = document.createElement("div")
-	section.innerHTML = `
+
+    let second__block = document.getElementById("second__block");
+
+    let type = obj.Type;
+    let title = obj.Title;
+    let img = obj.Poster;
+    let year = obj.Year;
+
+    //console.log(type)
+    //console.log(title)
+    //console.log(img)
+    //console.log(year)
+
+
+    let section = document.createElement("div");
+    section.innerHTML = `
 	<div class="result" id="result">
       <div class="img">
 	  <img src="${img}" alt="${img}">
@@ -46,22 +42,26 @@ btn.onclick = function (e) {
 		  </button>
 			</div>
       </div>
-	  `
-	  
-	  
+	  `;
+
+		
+    second__block.append(section);
+
+    let resultBtn = document.getElementById("result__btn");
 	
 	
-	second__block.append(section)
+
 		
-	  let resultBtn = document.getElementById("result__btn")
-	  
-	    resultBtn.onclick = function () {
-			
-		let section__three = document.getElementById("section__three")
+
+
+    resultBtn.onclick = function () {
+      let section__three = document.getElementById("section__three");
 		
-		let details = document.getElementById("details")
-			console.log(details)
-			details.innerHTML =`
+      let details = document.getElementById("details");
+	  details.classList.add("details");
+      
+
+      details.innerHTML = `
 			<div class"detail__img" id="detail__img">
 				<img src="${img}" alt="${img}">
 			</div>
@@ -92,21 +92,12 @@ btn.onclick = function (e) {
 					<h5>Awards: ${obj.Awards}</h5>
 				</div>
 			</div>
-			`
-			
-			console.log(details)
-			section__three.append(details)
-	}
-  };
-  
+			`;
+      section__three.append(details);
 
- 
+      
+    };
+  };
+
   xhr.send();
 };
-
-
-
-
-
-
-
