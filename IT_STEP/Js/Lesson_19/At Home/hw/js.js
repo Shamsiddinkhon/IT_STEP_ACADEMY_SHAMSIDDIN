@@ -94,8 +94,6 @@ btn.onclick = function (e) {
 			</div>
 			`;
       section__three.append(details);
-
-      
     };
   };
 

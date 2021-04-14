@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Random String Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="block">
+        <form>
+          <h2>Random String Generator</h2>
+          <div class="form">
+            <div class="input">
+              <label for="">
+                  String Should be
+                  <input type="text" name="" id="input" />
+                  characters long.
+              </label>
+            </div>
+            <div class="chekbox">
+                <label for="">
+              <input type="checkbox" id="number" />
+              Numeric digits (0-9)
+            </label>
+              <label for="">
+                  <input type="checkbox" id="upper" />
+                  Uppercase letters (A-Z)
+                </label>
+              <label for="">
+                  <input type="checkbox" id="lower" />
+                  Lowercase letters (a-z)
+                </label>
+            </div>
+            <div class="button">
+              <button class="btn" id="btn">Generate</button>
+            </div>
+            <hr />
+            <div class="result">
+              <h3>Result</h3>
+              <input type="text" name="" id="reslut" readonly />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/js.js"></script>
+  </body>
+</html>
