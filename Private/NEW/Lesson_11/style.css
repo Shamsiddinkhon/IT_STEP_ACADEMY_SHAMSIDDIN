@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1140px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.block{
+    width: 260px;
+    height: 330px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.circle__container {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle__block{
+    border: 1px solid black;
+    width: 260px;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+    background-color: burlywood;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.first,
+.second{
+    padding: 5px;
+}
+.about__one{
+    border-right: 1px solid black;
+}
+.about__one,
+.about__two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ffirst,
+.ssecond{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 5px 15px;
+    font-size: .8rem;
+}
