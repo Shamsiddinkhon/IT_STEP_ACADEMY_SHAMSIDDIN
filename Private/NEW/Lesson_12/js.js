@@ -70,12 +70,12 @@
 //         console.log(jsonData);
 //     })
 
-let btn = document.querySelector("#btn");
-let option = document.querySelectorAll("select");
-let comment = document.querySelector("#comment");
+// let btn = document.querySelector("#btn");
+// let option = document.querySelectorAll("select");
+// let comment = document.querySelector("#comment");
 
-let baseURL = "https://api.sampleapis.com/coffee/hot";
-fetch(baseURL)
+// let baseURL = "https://api.sampleapis.com/coffee/hot";
+// fetch(baseURL)
   // .then((resp) => {
   //   return resp.json();
   // })
@@ -83,9 +83,13 @@ fetch(baseURL)
   //   console.log(data);
   // });
 
+  
+
 btn.onclick = function (e) {
   e.preventDefault();
   for (let i = 0; i < option.length; i++) {
     console.log(option[i].value);
   }
 };
+
+
