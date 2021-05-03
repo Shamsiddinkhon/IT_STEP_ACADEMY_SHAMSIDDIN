@@ -25,7 +25,6 @@ btn.onclick = function (e) {
     //console.log(img)
     //console.log(year)
 
-
     let section = document.createElement("div");
     section.innerHTML = `
 	<div class="result" id="result">
@@ -44,22 +43,15 @@ btn.onclick = function (e) {
       </div>
 	  `;
 
-		
     second__block.append(section);
 
     let resultBtn = document.getElementById("result__btn");
-	
-	
-
-		
-
 
     resultBtn.onclick = function () {
       let section__three = document.getElementById("section__three");
-		
+
       let details = document.getElementById("details");
-	  details.classList.add("details");
-      
+      details.classList.add("details");
 
       details.innerHTML = `
 			<div class"detail__img" id="detail__img">
