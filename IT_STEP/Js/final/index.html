@@ -2,14 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="assets/css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>OpenWeatherMap Api</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <title>Document</title>
   </head>
   <body>
     <header id="header" class="header">
@@ -26,10 +27,12 @@
                     type="text"
                     name=""
                     id="search"
-                    class="input_text"
+                    class="search"
                     placeholder="Tashkent, Uzbekistan"
                   />
-                  <i class="bx bx-search ico submit"></i>
+                  <button value="SEARCH" class="submit">
+                    <i class="bx bx-search ico"></i>
+                  </button>
                 </div>
               </form>
             </div>
@@ -39,24 +42,24 @@
           <div class="conatiner">
             <div class="nav__menu">
               <h3 class="today">Today</h3>
-              <h3 class="week">5-Day forecast</h3>
+              <h3 class="forecast">5-Day forecast</h3>
             </div>
           </div>
         </div>
       </nav>
     </header>
+
     <main id="t-main" class="t-main">
       <div class="conatiner">
         <section class="current" id="current">
-          <div class="current__weather">
+          <!-- <div class="current__weather">
             <div class="current__info">
-              <div class="current__logo"><h1>Current Weahther</h1></div>
-              <div class="current__date"><h2></h2></div>
+              <div class="current__logo"><h1>Current Weather</h1></div>
+              <div class="current__date"><h2>02.05.2021</h2></div>
             </div>
             <div class="current__blocks">
               <div class="current__img">
-               
-                <i class="bx bxs-sun current__sun"></i>
+
                 <p>Sunny</p>
               </div>
               <div class="current__temp">
@@ -69,10 +72,11 @@
                 <p>Duration: 10.07 hr</p>
               </div>
             </div>
-          </div>
+          </div> -->
         </section>
         <section class="hourly" id="hourly">
-          <div class="hr__content">
+          <!-- <div class="hr__content">
+
             <div class="hr__header">
               <h1>hourly</h1>
             </div>
@@ -134,7 +138,8 @@
                 </tr>
               </table>
             </div>
-          </div>
+
+          </div> -->
         </section>
         <section class="places">
           <div class="places__content">
@@ -171,123 +176,6 @@
         </section>
       </div>
     </main>
-    <main id="d-main" class="d-main">
-      <div class="conatiner">
-        <section class="day__current" id="current">
-          <div class="days__today">
-            <div class="days">
-              <h1>sunday</h1>
-              <p>Jul1</p>
-              <i class="bx bxs-sun hr__sun"></i>
-              <h2 class="day__temps">25&degC</h2>
-              <p class="day__temp__feel">Clear, Warm</p>
-            </div>
-            <div class="days">
-              <h1>sunday</h1>
-              <p>Jul2</p>
-              <i class="bx bxs-sun hr__sun"></i>
-              <h2 class="day__temps">25&degC</h2>
-              <p class="day__temp__feel">Clear, Warm</p>
-            </div>
-            <div class="days">
-              <h1>sunday</h1>
-              <p>Jul3</p>
-              <i class="bx bxs-sun hr__sun"></i>
-              <h2 class="day__temps">25&degC</h2>
-              <p class="day__temp__feel">Clear, Warm</p>
-            </div>
-            <div class="days">
-              <h1>sunday</h1>
-              <p>Jul4</p>
-              <i class="bx bxs-sun hr__sun"></i>
-              <h2 class="day__temps">25&degC</h2>
-              <p class="day__temp__feel">Clear, Warm</p>
-            </div>
-            <div class="days">
-              <h1>sunday</h1>
-              <p>Jul5</p>
-              <i class="bx bxs-sun hr__sun"></i>
-              <h2 class="day__temps">25&degC</h2>
-              <p class="day__temp__feel">Clear, Warm</p>
-            </div>
-          </div>
-        </section>
-        <section class="hourly" id="hourly">
-          <div class="hr__content">
-            <div class="hr__header">
-              <h1>hourly</h1>
-            </div>
-            <div class="hr__today">
-              <table>
-                <tr>
-                  <th>TODAY</th>
-                  <td>pm</td>
-                  <td>pm</td>
-                  <td>pm</td>
-                  <td>pm</td>
-                  <td>pm</td>
-                  <td>pm</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td><i class="bx bxs-sun hr__sun"></i></td>
-                  <td><i class="bx bxs-sun hr__sun"></i></td>
-                  <td><i class="bx bxs-sun hr__sun"></i></td>
-                  <td><i class="bx bxs-sun hr__sun"></i></td>
-                  <td><i class="bx bxs-sun hr__sun"></i></td>
-                  <td><i class="bx bxs-sun hr__sun"></i></td>
-                </tr>
-                <tr>
-                  <td>Forecast</td>
-                  <td>Sunny</td>
-                  <td>Sunny</td>
-                  <td>Sunny</td>
-                  <td>Sunny</td>
-                  <td>Sunny</td>
-                  <td>Sunny</td>
-                </tr>
-                <tr>
-                  <td>Temp (&degC)</td>
-                  <td>28&deg</td>
-                  <td>28&deg</td>
-                  <td>28&deg</td>
-                  <td>28&deg</td>
-                  <td>28&deg</td>
-                  <td>28&deg</td>
-                </tr>
-                <tr>
-                  <td>RealFeel</td>
-                  <td>29&deg</td>
-                  <td>29&deg</td>
-                  <td>29&deg</td>
-                  <td>29&deg</td>
-                  <td>29&deg</td>
-                  <td>29&deg</td>
-                </tr>
-                <tr>
-                  <td>Wind (km/h)</td>
-                  <td>11ESE</td>
-                  <td>11ESE</td>
-                  <td>11ESE</td>
-                  <td>11ESE</td>
-                  <td>11ESE</td>
-                  <td>11ESE</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <main class="error" id="error">
-      <div class="over"></div>
-      <div class="c404">404</div>
-      <div class="notfound">
-        страница не найдена<br />
-        <a href="index.html" id="page404"> перейти на главную страницу..</a>
-      </div>
-    </main>
-
-    <script src="assets/js/main.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

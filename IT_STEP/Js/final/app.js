@@ -1,19 +1,3 @@
-const tMain = document.querySelector(".t-main");
-const dMain = document.querySelector(".d-main");
-const today = document.querySelector(".today");
-const days = document.querySelector(".week");
-const hr = document.querySelector(".hr__today");
-const current = document.querySelector(".current__weather");
-
-days.onclick = () => {
-  tMain.style.display = "none";
-  dMain.style.display = "block";
-};
-today.onclick = () => {
-  tMain.style.display = "block";
-  dMain.style.display = "none";
-};
-
 let input = document.querySelector(".input_text");
 let button = document.querySelector(".submit");
 
@@ -27,12 +11,6 @@ button.addEventListener("click", function (name) {
     .then((data) => {
       let currentWeather = document.createElement("div");
       currentWeather.classList.add("current__weather");
-
-      console.log(data);
-
-      ////////////// Blocking Default
-      hr.style.display = "none";
-      current.style.display = "none";
 
       let sunrise = new Date(data["sys"]["sunrise"] * 1000);
 
@@ -68,8 +46,8 @@ button.addEventListener("click", function (name) {
                 )}&deg</p>
               </div>
               <div class="current__times">
-                <p>Sunrise: ${sunrises} </p>
-                <p>Sunset: ${sunsets} </p>
+                <p>Sunrise: ${sunrises} AM</p>
+                <p>Sunset: ${sunsets} PM</p>
                 <p>Duration: ${duration}</p>
               </div>
             </div>
@@ -87,11 +65,7 @@ button.addEventListener("click", function (name) {
       // input.value = "";
     })
 
-    .catch((err) => {
-      (tMain.style.display = "none"),
-        (dMain.style.display = "none"),
-        (document.querySelector("#error").style.display = "block");
-    });
+    .catch((err) => alert("Wrong city name!"));
 
   fetch(
     "https://api.openweathermap.org/data/2.5/forecast?q=" +
@@ -109,7 +83,7 @@ button.addEventListener("click", function (name) {
 
       let hourly = document.createElement("div");
       hourly.classList.add("hr__content");
-      // console.log(data["list"][0]["weather"][0]["icon"]);
+      console.log(data["list"][0]["weather"][0]["icon"]);
       hourly.innerHTML = ` <div class="hr__header">
               <h1>hourly</h1>
             </div>
@@ -210,140 +184,4 @@ button.addEventListener("click", function (name) {
 
       document.getElementById("hourly").append(hourly);
     });
-  fetch(
-    "https://api.openweathermap.org/data/2.5/forecast?q=" +
-      input.value +
-      "&appid=81e4c013d025c8ecaaafcae614d545e0"
-  )
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data["list"][0]["weather"][0]["description"]);
-      let time11 = new Date(data["list"][0]["dt"] * 1000);
-      let time22 = new Date(data["list"][8]["dt"] * 1000);
-      let time33 = new Date(data["list"][16]["dt"] * 1000);
-      let time44 = new Date(data["list"][24]["dt"] * 1000);
-      let time55 = new Date(data["list"][32]["dt"] * 1000);
-
-      let days5 = document.createElement("div");
-      days5.classList.add("days__today");
-      days5.classList.add("none");
-      let d1 = time11;
-      let d2 = time22;
-      let d3 = time33;
-      let d4 = time44;
-      let d5 = time55;
-
-      let weekday = new Array(7);
-      weekday[0] = "Sunday";
-      weekday[1] = "Monday";
-      weekday[2] = "Tuesday";
-      weekday[3] = "Wednesday";
-      weekday[4] = "Thursday";
-      weekday[5] = "Friday";
-
-      let n1 = weekday[d1.getDay()];
-      let n2 = weekday[d2.getDay()];
-      let n3 = weekday[d3.getDay()];
-      let n4 = weekday[d4.getDay()];
-      let n5 = weekday[d5.getDay()];
-
-      let month = new Array();
-      month[0] = "January";
-      month[1] = "February";
-      month[2] = "March";
-      month[3] = "April";
-      month[4] = "May";
-      month[5] = "June";
-      month[6] = "July";
-      month[7] = "August";
-      month[8] = "September";
-      month[9] = "October";
-      month[10] = "November";
-      month[11] = "December";
-
-      let d11 = time11;
-      let n11 = month[d11.getMonth()] + " " + time11.getDate();
-      let d22 = time22;
-      let n22 = month[d22.getMonth()] + " " + time22.getDate();
-      let d33 = time33;
-      let n33 = month[d33.getMonth()] + " " + time33.getDate();
-      let d44 = time44;
-      let n44 = month[d44.getMonth()] + " " + time44.getDate();
-      let d55 = time55;
-      let n55 = month[d55.getMonth()] + " " + time55.getDate();
-
-      days5.innerHTML = `
-          <div class="days">
-                <h1>${n1}</h1>
-                <p>${n11} </p>
-               <img src="http://openweathermap.org/img/wn/${
-                 data["list"][0]["weather"][0]["icon"]
-               }@2x.png" alt="">
-                <h2 class="day__temps">${Math.floor(
-                  data["list"][0]["main"]["temp"] - 273
-                )}&degC</h2>
-                <p class="day__temp__feel">${
-                  data["list"][0]["weather"][0]["description"]
-                }</p>
-              </div>
-              <div class="days">
-                <h1>${n2}</h1>
-                <p>${n22}</p>
-                <img src="http://openweathermap.org/img/wn/${
-                  data["list"][8]["weather"][0]["icon"]
-                }@2x.png" alt="">
-                <h2 class="day__temps">${Math.floor(
-                  data["list"][8]["main"]["temp"] - 273
-                )}&degC</h2>
-                <p class="day__temp__feel">${
-                  data["list"][8]["weather"][0]["description"]
-                }</p>
-              </div>
-              <div class="days">
-                <h1>${n3}</h1>
-                <p>${n33}</p>
-                <img src="http://openweathermap.org/img/wn/${
-                  data["list"][16]["weather"][0]["icon"]
-                }@2x.png" alt="">
-                <h2 class="day__temps">${Math.floor(
-                  data["list"][16]["main"]["temp"] - 273
-                )}&degC</h2>
-                <p class="day__temp__feel">${
-                  data["list"][16]["weather"][0]["description"]
-                }</p>
-              </div>
-              <div class="days">
-                <h1>${n4}</h1>
-                <p>${n44}</p>
-               <img src="http://openweathermap.org/img/wn/${
-                 data["list"][24]["weather"][0]["icon"]
-               }@2x.png" alt="">
-                <h2 class="day__temps">${Math.floor(
-                  data["list"][24]["main"]["temp"] - 273
-                )}&degC</h2>
-                <p class="day__temp__feel">${
-                  data["list"][24]["weather"][0]["description"]
-                }</p>
-              </div>
-              <div class="days">
-                <h1>${n5}</h1>
-                <p>${n55}</p>
-                <img src="http://openweathermap.org/img/wn/${
-                  data["list"][32]["weather"][0]["icon"]
-                }@2x.png" alt="">
-                <h2 class="day__temps">${Math.floor(
-                  data["list"][32]["main"]["temp"] - 273
-                )}&degC</h2>
-                <p class="day__temp__feel">${
-                  data["list"][32]["weather"][0]["description"]
-                }</p>
-              </div>
-          `;
-
-      document.getElementById("tomorrow").append(days5);
-    });
 });
-
-document.getElementsById("page404").onclick = function () {
-  document.getElementsById("error").style.display = "none";
-};
