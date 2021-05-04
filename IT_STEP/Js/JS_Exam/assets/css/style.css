@@ -208,6 +208,8 @@ tr td:first-child {
   background-color: #e0dede;
   border-radius: 50px;
   padding: 10px 20px;
+  width: 400px;
+  height: 60px;
 }
 .bx-place {
   font-size: 2rem;
@@ -236,14 +238,17 @@ tr td:first-child {
 }
 .days {
   text-align: center;
-  padding: 15px 44px;
-  border-right: 1px solid gray;
+  padding: 10px 40px;
+  width: 228px;
+  height: 320px;
+  border-right: 1px solid rgb(77, 77, 77);
+  background-color: #ccc8c8;
 }
 .days:last-child {
   border-right: none;
 }
 .days:hover {
-  background-color: #661717;
+  background-color: #fff;
 }
 .days p,
 i,
@@ -268,25 +273,32 @@ h2 {
 
 
 /* 404 */
-.over {
-  background: rgba(0, 0, 0, 0.7); /* Цвет фона и значение прозрачности */
-  position: absolute; /* Абсолютное позиционирование */
-  left: 0; right: 0; top: 0; bottom: 0; /* Отступы от краев браузера */
-  }
+
 .c404 {
-  margin-top: 100px;
   text-align: center; /* Выравнивание текста по центру */
   font-size: 10em;
   color: #fcf9f9;
   position: relative; /* Относительное позиционирование */
   z-index: 2; /* Порядок наложения элемента по высоте */
+  top: 40px;
+  left: 0;
+  }
+  .page404{
+    position: absolute;
+    left: 845px;
+    top: -120px;
+  }
+  .err {
+    font-size: 2rem;
   }
 .notfound {
   text-align: center;
-  color: #fff;
-  font-size: 2em;
-  position: relative; /* Относительное позиционирование */
+  color: rgb(26, 106, 138);
+  font-size: 2rem;
+  position: absolute; /* Относительное позиционирование */
   z-index: 2; /* Порядок наложения элемента по слоям в глубину */
+  top: -40px; 
+  left: 450px;
   }
 .notfound a {
   color: #fff;
@@ -297,5 +309,8 @@ h2 {
   text-decoration: none;
   }
 .error{
+  display: none;
+}
+.toolbar {
   display: none;
 }

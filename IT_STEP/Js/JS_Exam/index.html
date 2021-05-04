@@ -28,6 +28,7 @@
                     id="search"
                     class="input_text"
                     placeholder="Tashkent, Uzbekistan"
+                    value="tashkent"
                   />
                   <i class="bx bx-search ico submit"></i>
                 </div>
@@ -136,14 +137,14 @@
             </div>
           </div>
         </section>
-        <section class="places">
+        <section class="places" id="places">
           <div class="places__content">
             <div class="places__header">
               <h1>nearby places</h1>
             </div>
             <div class="places__block">
               <div class="first">
-                <div class="in">
+                <div class="in"> 
                   <p class="ff">Tashkent</p>
                   <i class="bx bxs-sun bx-place"></i>
                   <p>36&degC</p>
@@ -173,8 +174,8 @@
     </main>
     <main id="d-main" class="d-main">
       <div class="conatiner">
-        <section class="day__current" id="current">
-          <div class="days__today">
+        <section class="day__current" id="day__current">
+          <!-- <div class="days__today">
             <div class="days">
               <h1>sunday</h1>
               <p>Jul1</p>
@@ -210,7 +211,7 @@
               <h2 class="day__temps">25&degC</h2>
               <p class="day__temp__feel">Clear, Warm</p>
             </div>
-          </div>
+          </div> -->
         </section>
         <section class="hourly" id="hourly">
           <div class="hr__content">
@@ -280,14 +281,18 @@
       </div>
     </main>
     <main class="error" id="error">
-      <div class="over"></div>
-      <div class="c404">404</div>
-      <div class="notfound">
-        страница не найдена<br />
-        <a href="index.html" id="page404"> перейти на главную страницу..</a>
+      <div class="conatiner">
+        <div class="over"></div>
+        
+        <div class="c404">
+          <a href="index.html" id="page404" class="page404"><i class='bx bxs-x-square bx-tada bx-rotate-180  err' ></i></a>
+          <img src="assets/img/error.gif" alt="">
+          <div class="notfound">
+            Page not Found
+          </div>
+        </div>
       </div>
     </main>
-
     <script src="assets/js/main.js"></script>
   </body>
 </html>

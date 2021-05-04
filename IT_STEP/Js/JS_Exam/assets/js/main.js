@@ -2,8 +2,10 @@ const tMain = document.querySelector(".t-main");
 const dMain = document.querySelector(".d-main");
 const today = document.querySelector(".today");
 const days = document.querySelector(".week");
-const hr = document.querySelector(".hr__today");
+const hr = document.querySelector(".hr__content");
 const current = document.querySelector(".current__weather");
+const page404 = document.getElementById("page404");
+const places = document.querySelector(".places__content");
 
 days.onclick = () => {
   tMain.style.display = "none";
@@ -14,10 +16,16 @@ today.onclick = () => {
   dMain.style.display = "none";
 };
 
+page404.onclick = function () {
+  document.getElementsById("error").style.display = "none";
+  document.querySelector("body").style.backgroundColor = "black";
+  console.log(page404);
+};
+
 let input = document.querySelector(".input_text");
 let button = document.querySelector(".submit");
 
-button.addEventListener("click", function (name) {
+button.addEventListener("click", function (e) {
   fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=" +
       input.value +
@@ -33,6 +41,7 @@ button.addEventListener("click", function (name) {
       ////////////// Blocking Default
       hr.style.display = "none";
       current.style.display = "none";
+      places.style.display = "none";
 
       let sunrise = new Date(data["sys"]["sunrise"] * 1000);
 
@@ -76,15 +85,6 @@ button.addEventListener("click", function (name) {
       
       `;
       document.getElementById("current").append(currentWeather);
-
-      // let tempValue = data["main"]["temp"];
-      // let nameValue = data["name"];
-      // let descValue = data["weather"][0]["description"];
-
-      // main.innerHTML = nameValue;
-      // desc.innerHTML = "Desc - " + descValue;
-      // temp.innerHTML = "Temp - " + tempValue;
-      // input.value = "";
     })
 
     .catch((err) => {
@@ -218,6 +218,8 @@ button.addEventListener("click", function (name) {
     .then((response) => response.json())
     .then((data) => {
       console.log(data["list"][0]["weather"][0]["description"]);
+      console.log(data);
+
       let time11 = new Date(data["list"][0]["dt"] * 1000);
       let time22 = new Date(data["list"][8]["dt"] * 1000);
       let time33 = new Date(data["list"][16]["dt"] * 1000);
@@ -234,18 +236,24 @@ button.addEventListener("click", function (name) {
       let d5 = time55;
 
       let weekday = new Array(7);
-      weekday[0] = "Sunday";
-      weekday[1] = "Monday";
-      weekday[2] = "Tuesday";
-      weekday[3] = "Wednesday";
-      weekday[4] = "Thursday";
-      weekday[5] = "Friday";
+      weekday[0] = "Sun";
+      weekday[1] = "Mon";
+      weekday[2] = "Tue";
+      weekday[3] = "Wed";
+      weekday[4] = "Thu";
+      weekday[5] = "Fri";
+      weekday[6] = "Sat";
 
       let n1 = weekday[d1.getDay()];
       let n2 = weekday[d2.getDay()];
       let n3 = weekday[d3.getDay()];
       let n4 = weekday[d4.getDay()];
       let n5 = weekday[d5.getDay()];
+      // console.log(n1);
+      // console.log(n2);
+      // console.log(n3);
+      // console.log(n4);
+      // console.log(n5);
 
       let month = new Array();
       month[0] = "January";
@@ -338,12 +346,79 @@ button.addEventListener("click", function (name) {
                   data["list"][32]["weather"][0]["description"]
                 }</p>
               </div>
-          `;
+              `;
 
-      document.getElementById("tomorrow").append(days5);
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////     NAERBY
+      let lat = data.city.coord.lat;
+      let lon = data.city.coord.lon;
+      // let icon = `<img src="http://openweathermap.org/img/wn/${data["list"][0]["weather"][0]["icon"]}@2x.png" alt=""> `
+      // console.log(icon);
+      fetch(
+        `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=5&&appid=81e4c013d025c8ecaaafcae614d545e0`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data[0]);
+          console.log(data[1].local_names.en);
+          console.log(data[2].local_names.en);
+          console.log(data[3].local_names.en);
+          console.log(data[4].local_names.en);
+
+          // let placesId = document.getElementById('places')
+          let nearby = document.createElement("div");
+          nearby.classList.add("places__content");
+
+
+
+          // console.log(data[0]["list"][0]["weather"][0]["icon"]);
+          nearby.innerHTML = `
+                      <div class="places__header">
+                      <h1>nearby places</h1>
+                    </div>
+                    <div class="places__block">
+                      <div class="first">
+                        <div class="in">
+                          <p class="ff">${data[1].local_names.en}</p>
+                          
+                          <p>36&degC</p>
+                        </div>
+                        <div class="in">
+                          <p class="ff">${data[2].local_names.en}</p>
+                          
+                          <p>36&degC</p>
+                        </div>
+                      </div>
+                      <div class="second">
+                        <div class="in">
+                          <p class="ff">${data[3].local_names.en}</p>
+                          
+                          <p>36&degC</p>
+                        </div>
+                        <div class="in">
+                          <p class="ff">${data[4].local_names.en}</p>
+                          
+                          <p>36&degC</p>
+                        </div>
+                      </div>
+                    </div>
+                      `;
+
+          document.getElementById("places").append(nearby);
+        })
+
+        .catch((err) => alert("Wrong city name!"));
+
+      document.getElementById("day__current").append(days5);
     });
 });
-
-document.getElementsById("page404").onclick = function () {
-  document.getElementsById("error").style.display = "none";
-};
