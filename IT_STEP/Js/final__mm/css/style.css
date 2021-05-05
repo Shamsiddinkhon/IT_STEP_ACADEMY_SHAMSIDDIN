@@ -53,7 +53,7 @@ img {
   background-color: aliceblue;
 }
 .conatiner {
-  max-width: 1140px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -75,7 +75,6 @@ img {
   position: relative;
 }
 .ico {
-  position: absolute;
   left: 160px;
   padding: 5px;
   font-size: 1.5rem;
@@ -106,8 +105,7 @@ img {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  background-color: #f6f6f6;
-  height: 320px;
+  background-color: #cccccc;
   padding: 20px;
 }
 .current__info {
@@ -151,9 +149,8 @@ img {
 /* hourly */
 .hourly {
   margin-top: 20px;
-  background-color: #f6f6f6;
+  background-color: #b8b7b7;
   padding: 20px;
-  height: 450px;
 }
 .hr__header {
   color: #079494;
@@ -177,7 +174,7 @@ tr td:first-child {
 /* places */
 .places {
   margin-top: 20px;
-  background-color: #f6f6f6;
+  background-color: #a8a8a8;
   padding: 20px;
   margin-bottom: 40px;
 }
@@ -187,9 +184,9 @@ tr td:first-child {
 .places__block {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   font-size: 1.6rem;
   margin-top: 20px;
 }
@@ -197,6 +194,7 @@ tr td:first-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex: 0 0 40%;
 }
 .second {
   display: flex;
@@ -208,35 +206,28 @@ tr td:first-child {
   align-items: center;
   justify-content: space-between;
   margin: 10px 50px;
-  background-color: #e0dede;
+  background-color: #d3d3d3;
   border-radius: 50px;
   padding: 10px 20px;
-  width: 400px;
-  height: 60px;
-}
-.in div:nth-child(2) {
-  display: flex;
-  align-items: center;
 }
 .bx-place {
   font-size: 2rem;
   color: yellow;
 }
 .ff {
-  padding:10px;
+  padding: 5px 100px 5px 10px;
 }
 
 /* days.html */
 
-.main {
+.t-main {
   margin-bottom: 20px;
 }
 .day__current {
   display: flex;
-  flex-direction: row;
-
+  flex-direction: column;
   margin-top: 20px;
-  background-color: #ededed;
+  background-color: #c5c5c5;
 }
 
 .days__today {
@@ -246,18 +237,13 @@ tr td:first-child {
 }
 .days {
   text-align: center;
-  padding: 10px 20px;
-  width: 222px;
-  height: 320px;
-  border-right: 1px solid rgb(77, 77, 77);
-  background-color: #f6f6f6;
+  padding: 15px 35px;
+  border-right: 1px solid gray;
 }
 .days:last-child {
   border-right: none;
 }
-.days:hover {
-  background-color: #fff;
-}
+
 .days p,
 i,
 h2 {
@@ -279,46 +265,77 @@ h2 {
   display: none;
 }
 
+.input {
+  text-align: center;
+  margin: 0 auto;
+}
 
-/* 404 */
+input[type="submit"] {
+  padding: 15px 30px;
+  background: #e7e7e7;
+  border: none;
+  border-radius: 1px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
 
+.input input[type="text"] {
+  width: 600px;
+  height: 55px;
+  padding: 5px 10px;
+  background: #e7e7e7;
+  border: none;
+  border-radius: 1px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+h1 {
+  font-weight: bold;
+  color: #0b9494;
+  font-size: 2rem;
+}
+a {
+  color: #f6f6f6;
+}
+/* .none {
+  display: none;
+}
+.block {
+  display: block;
+} */
+#tomorrow {
+  display: none;
+}
+.over {
+  background: rgba(0, 0, 0, 0.7); /* Цвет фона и значение прозрачности */
+  position: absolute; /* Абсолютное позиционирование */
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; /* Отступы от краев браузера */
+}
 .c404 {
+  margin-top: 100px;
   text-align: center; /* Выравнивание текста по центру */
   font-size: 10em;
   color: #fcf9f9;
   position: relative; /* Относительное позиционирование */
   z-index: 2; /* Порядок наложения элемента по высоте */
-  top: 40px;
-  left: 0;
-  }
-  .page404{
-    position: absolute;
-    left: 845px;
-    top: -120px;
-  }
-  .err {
-    font-size: 2rem;
-  }
+}
 .notfound {
   text-align: center;
-  color: rgb(26, 106, 138);
-  font-size: 2rem;
-  position: absolute; /* Относительное позиционирование */
+  color: #fff;
+  font-size: 2em;
+  position: relative; /* Относительное позиционирование */
   z-index: 2; /* Порядок наложения элемента по слоям в глубину */
-  top: -40px; 
-  left: 450px;
-  }
+}
 .notfound a {
   color: #fff;
-  font-size: 0.8em;
-  }
+  font-size: 2rem;
+}
 .notfound a:hover {
   color: yellow;
   text-decoration: none;
-  }
-.error{
-  display: none;
-}
-.toolbar {
-  display: none;
 }

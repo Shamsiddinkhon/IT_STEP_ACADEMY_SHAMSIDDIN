@@ -18,7 +18,7 @@ today.onclick = () => {
 
 page404.onclick = function () {
   document.getElementsById("error").style.display = "none";
-  document.querySelector("body").style.backgroundColor = "black";
+  document.body.style.backgroundColor = "black";
   console.log(page404);
 };
 
@@ -33,6 +33,13 @@ button.addEventListener("click", function (e) {
   )
     .then((response) => response.json())
     .then((data) => {
+      
+      if (elemmm.length > 0) {
+        elemmm[0].remove();
+      }
+      document.getElementById("error").style.display = "none";
+      document.getElementById("t-main").style.display = "block";
+
       let currentWeather = document.createElement("div");
       currentWeather.classList.add("current__weather");
 
@@ -41,7 +48,6 @@ button.addEventListener("click", function (e) {
       ////////////// Blocking Default
       hr.style.display = "none";
       current.style.display = "none";
-      places.style.display = "none";
 
       let sunrise = new Date(data["sys"]["sunrise"] * 1000);
 
@@ -100,6 +106,12 @@ button.addEventListener("click", function (e) {
   )
     .then((response) => response.json())
     .then((data) => {
+
+      let elemmm2 = document.getElementsByClassName("hr__content");
+
+      if (elemmm2.length > 0) {
+        elemmm2[0].remove();
+      }
       let time1 = new Date(data["list"][0]["dt"] * 1000);
       let time2 = new Date(data["list"][1]["dt"] * 1000);
       let time3 = new Date(data["list"][2]["dt"] * 1000);
@@ -109,7 +121,6 @@ button.addEventListener("click", function (e) {
 
       let hourly = document.createElement("div");
       hourly.classList.add("hr__content");
-      // console.log(data["list"][0]["weather"][0]["icon"]);
       hourly.innerHTML = ` <div class="hr__header">
               <h1>hourly</h1>
             </div>
@@ -219,6 +230,12 @@ button.addEventListener("click", function (e) {
     .then((data) => {
       console.log(data["list"][0]["weather"][0]["description"]);
       console.log(data);
+
+      let elemmm3 = document.getElementsByClassName("days__today");
+
+      if (elemmm3.length > 0) {
+        elemmm3[0].remove();
+      }
 
       let time11 = new Date(data["list"][0]["dt"] * 1000);
       let time22 = new Date(data["list"][8]["dt"] * 1000);
@@ -348,76 +365,45 @@ button.addEventListener("click", function (e) {
               </div>
               `;
 
-
-
-
-
-
-
-
-
 ///////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////
 ////////////////////////     NAERBY
-      let lat = data.city.coord.lat;
-      let lon = data.city.coord.lon;
-      // let icon = `<img src="http://openweathermap.org/img/wn/${data["list"][0]["weather"][0]["icon"]}@2x.png" alt=""> `
-      // console.log(icon);
-      fetch(
-        `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=5&&appid=81e4c013d025c8ecaaafcae614d545e0`
-      )
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data[0]);
-          console.log(data[1].local_names.en);
-          console.log(data[2].local_names.en);
-          console.log(data[3].local_names.en);
-          console.log(data[4].local_names.en);
+let lat = data.city.coord.lat;
+let lon = data.city.coord.lon;
+fetch(
+  `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=5&&appid=81e4c013d025c8ecaaafcae614d545e0`
+)
+  .then((response) => response.json())
+  .then((data) => {
+    document.querySelector(".places__block").remove();
+    let test = document.createElement("div");
+    test.className = "places__block";
+    test.id = "places";
+    document.querySelector(".places__content").append(test);
+    for (let i = 0; i < data.length - 1; i++) {
+      let nearby = document.createElement("div");
+      nearby.classList.add("first");
 
-          // let placesId = document.getElementById('places')
-          let nearby = document.createElement("div");
-          nearby.classList.add("places__content");
+      nearby.innerHTML = `
+                
+          <div class="in">
+            <p class="ff">${data[i + 1]["name"]}</p>
+          </div>
+        `;
 
-
-
-          // console.log(data[0]["list"][0]["weather"][0]["icon"]);
-          nearby.innerHTML = `
-                      <div class="places__header">
-                      <h1>nearby places</h1>
-                    </div>
-                    <div class="places__block">
-                      <div class="first">
-                        <div class="in">
-                          <p class="ff">${data[1].local_names.en}</p>
-                          
-                          <p>36&degC</p>
-                        </div>
-                        <div class="in">
-                          <p class="ff">${data[2].local_names.en}</p>
-                          
-                          <p>36&degC</p>
-                        </div>
-                      </div>
-                      <div class="second">
-                        <div class="in">
-                          <p class="ff">${data[3].local_names.en}</p>
-                          
-                          <p>36&degC</p>
-                        </div>
-                        <div class="in">
-                          <p class="ff">${data[4].local_names.en}</p>
-                          
-                          <p>36&degC</p>
-                        </div>
-                      </div>
-                    </div>
-                      `;
-
-          document.getElementById("places").append(nearby);
+      document.getElementById("places").append(nearby);
+    }
         })
+        let h11 = document.getElementsByClassName("shams");
 
-        .catch((err) => alert("Wrong city name!"));
+          if (h11.length > 0) {
+            h11[0].remove();
+          }
+          let h1 = document.createElement("h1");
+          h1.classList.add("shams");
+          h1.innerHTML = "nearby places";
+          document.querySelector(".places__header").append(h1);
 
       document.getElementById("day__current").append(days5);
     });

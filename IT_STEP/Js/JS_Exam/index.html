@@ -40,7 +40,7 @@
           <div class="conatiner">
             <div class="nav__menu">
               <h3 class="today">Today</h3>
-              <h3 class="week">5-Day forecast</h3>
+              <h3 class="forecast">5-Day forecast</h3>
             </div>
           </div>
         </div>
@@ -49,29 +49,8 @@
     <main id="t-main" class="t-main">
       <div class="conatiner">
         <section class="current" id="current">
-          <div class="current__weather">
-            <div class="current__info">
-              <div class="current__logo"><h1>Current Weahther</h1></div>
-              <div class="current__date"><h2></h2></div>
-            </div>
-            <div class="current__blocks">
-              <div class="current__img">
-               
-                <i class="bx bxs-sun current__sun"></i>
-                <p>Sunny</p>
-              </div>
-              <div class="current__temp">
-                <h1>29&degC</h1>
-                <p class="current__temp__text">Real Feel 30&deg</p>
-              </div>
-              <div class="current__times">
-                <p>Sunrise: 7.04 AM</p>
-                <p>Sunset: 5.11 PM</p>
-                <p>Duration: 10.07 hr</p>
-              </div>
-            </div>
-          </div>
         </section>
+        <section class="day__current" id="tomorrow"></section>
         <section class="hourly" id="hourly">
           <div class="hr__content">
             <div class="hr__header">
@@ -137,149 +116,18 @@
             </div>
           </div>
         </section>
-        <section class="places" id="places">
+        <section class="places">
           <div class="places__content">
             <div class="places__header">
-              <h1>nearby places</h1>
+              <!-- <h1>nearby places</h1> -->
             </div>
-            <div class="places__block">
-              <div class="first">
-                <div class="in"> 
-                  <p class="ff">Tashkent</p>
-                  <i class="bx bxs-sun bx-place"></i>
-                  <p>36&degC</p>
-                </div>
-                <div class="in">
-                  <p class="ff">Tashkent</p>
-                  <i class="bx bxs-sun bx-place"></i>
-                  <p>36&degC</p>
-                </div>
-              </div>
-              <div class="second">
-                <div class="in">
-                  <p class="ff">Tashkent</p>
-                  <i class="bx bxs-sun bx-place"></i>
-                  <p>36&degC</p>
-                </div>
-                <div class="in">
-                  <p class="ff">Tashkent</p>
-                  <i class="bx bxs-sun bx-place"></i>
-                  <p>36&degC</p>
-                </div>
-              </div>
-            </div>
+            <div id="places" class="places__block"></div>
           </div>
+          
         </section>
       </div>
     </main>
-    <main id="d-main" class="d-main">
-      <div class="conatiner">
-        <section class="day__current" id="day__current">
-          <!-- <div class="days__today">
-            <div class="days">
-              <h1>sunday</h1>
-              <p>Jul1</p>
-              <i class="bx bxs-sun hr__sun"></i>
-              <h2 class="day__temps">25&degC</h2>
-              <p class="day__temp__feel">Clear, Warm</p>
-            </div>
-            <div class="days">
-              <h1>sunday</h1>
-              <p>Jul2</p>
-              <i class="bx bxs-sun hr__sun"></i>
-              <h2 class="day__temps">25&degC</h2>
-              <p class="day__temp__feel">Clear, Warm</p>
-            </div>
-            <div class="days">
-              <h1>sunday</h1>
-              <p>Jul3</p>
-              <i class="bx bxs-sun hr__sun"></i>
-              <h2 class="day__temps">25&degC</h2>
-              <p class="day__temp__feel">Clear, Warm</p>
-            </div>
-            <div class="days">
-              <h1>sunday</h1>
-              <p>Jul4</p>
-              <i class="bx bxs-sun hr__sun"></i>
-              <h2 class="day__temps">25&degC</h2>
-              <p class="day__temp__feel">Clear, Warm</p>
-            </div>
-            <div class="days">
-              <h1>sunday</h1>
-              <p>Jul5</p>
-              <i class="bx bxs-sun hr__sun"></i>
-              <h2 class="day__temps">25&degC</h2>
-              <p class="day__temp__feel">Clear, Warm</p>
-            </div>
-          </div> -->
-        </section>
-        <section class="hourly" id="hourly">
-          <div class="hr__content">
-            <div class="hr__header">
-              <h1>hourly</h1>
-            </div>
-            <div class="hr__today">
-              <table>
-                <tr>
-                  <th>TODAY</th>
-                  <td>pm</td>
-                  <td>pm</td>
-                  <td>pm</td>
-                  <td>pm</td>
-                  <td>pm</td>
-                  <td>pm</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td><i class="bx bxs-sun hr__sun"></i></td>
-                  <td><i class="bx bxs-sun hr__sun"></i></td>
-                  <td><i class="bx bxs-sun hr__sun"></i></td>
-                  <td><i class="bx bxs-sun hr__sun"></i></td>
-                  <td><i class="bx bxs-sun hr__sun"></i></td>
-                  <td><i class="bx bxs-sun hr__sun"></i></td>
-                </tr>
-                <tr>
-                  <td>Forecast</td>
-                  <td>Sunny</td>
-                  <td>Sunny</td>
-                  <td>Sunny</td>
-                  <td>Sunny</td>
-                  <td>Sunny</td>
-                  <td>Sunny</td>
-                </tr>
-                <tr>
-                  <td>Temp (&degC)</td>
-                  <td>28&deg</td>
-                  <td>28&deg</td>
-                  <td>28&deg</td>
-                  <td>28&deg</td>
-                  <td>28&deg</td>
-                  <td>28&deg</td>
-                </tr>
-                <tr>
-                  <td>RealFeel</td>
-                  <td>29&deg</td>
-                  <td>29&deg</td>
-                  <td>29&deg</td>
-                  <td>29&deg</td>
-                  <td>29&deg</td>
-                  <td>29&deg</td>
-                </tr>
-                <tr>
-                  <td>Wind (km/h)</td>
-                  <td>11ESE</td>
-                  <td>11ESE</td>
-                  <td>11ESE</td>
-                  <td>11ESE</td>
-                  <td>11ESE</td>
-                  <td>11ESE</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
+ 
     <main class="error" id="error">
       <div class="conatiner">
         <div class="over"></div>
@@ -293,6 +141,17 @@
         </div>
       </div>
     </main>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/js.js"></script>
+
+
+
+    <!-- <script>
+      let hour1 = 15;
+      let date = new Date();
+
+      date.setHours(date.getHours() - hour1);
+      console.log(date);
+    </script> -->
+    <!-- <script src="assets/js/main.js"></script> -->
   </body>
 </html>
