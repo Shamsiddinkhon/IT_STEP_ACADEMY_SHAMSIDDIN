@@ -21,8 +21,10 @@ button.addEventListener("click", function (name) {
       document.getElementById("t-main").style.display = "block";
       let currentWeather = document.createElement("div");
       currentWeather.classList.add("current__weather");
-
+      
+      let date = new Date();
       let sunrise = new Date(data["sys"]["sunrise"] * 1000);
+      
 
       var currentImg = `http://openweathermap.org/img/wn/${data["weather"][0]["icon"]}@2x.png`;
       console.log(currentImg);
@@ -35,12 +37,11 @@ button.addEventListener("click", function (name) {
 
       let sunsets = sunset.getHours() + ":" + sunset.getMinutes();
       let duration =
-        sunrise.getHours() -
-        sunset.getHours() +
+      sunset.getHours() -
+        sunrise.getHours() +
         " hr " +
-        (sunrise.getMinutes() - sunset.getMinutes()) +
+        (sunset.getMinutes() - sunrise.getMinutes()) +
         " min";
-      let date = new Date();
       let dates =
         date.getDate() + "." + (date.getMonth() + 1) + "." + date.getFullYear();
       currentWeather.innerHTML = `
@@ -590,6 +591,7 @@ button.addEventListener("click", function (name) {
   today.onclick = () => {
     current.style.display = "block";
     tomorrow.style.display = "none";
+    document.getElementsByClassName("places")[0].style.display = "block";
     fetch(
       "https://api.openweathermap.org/data/2.5/forecast?q=" +
         input.value +
@@ -715,9 +717,12 @@ button.addEventListener("click", function (name) {
   forecast.onclick = () => {
     current.style.display = "none";
     tomorrow.style.display = "block";
-    document.getElementsByClassName("places__block").style.display = "none";
+    document.getElementsByClassName("places")[0].style.display = "none";
+    
   };
-});
+  tomorrow.style.display = "block";
+
+}); 
 
 document.getElementById("page404").onclick = function () {
   document.getElementById("error").style.display = "none";
