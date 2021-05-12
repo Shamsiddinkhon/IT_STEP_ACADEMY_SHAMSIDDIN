@@ -5,16 +5,13 @@ app.set("view engine", "ejs");
 
 // EJS
 app.get("/", (req, res) => {
-    res.render("home")
-  });
+  res.render("home");
+});
 
-  app.get("/random", (req, res) => {
-      const num = Math.floor(Math.random() * 20) + 1
-      res.render("random", {num})
-  })
-
-
-
+app.get("/random", (req, res) => {
+  const num = Math.floor(Math.random() * 20) + 1;
+  res.render("random", { num });
+});
 
 // // GET express
 // app.get("/", (req, res) => {
