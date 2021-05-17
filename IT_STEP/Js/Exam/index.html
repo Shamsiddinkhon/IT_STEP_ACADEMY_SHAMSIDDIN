@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="nav__upper">
+                <div class="nav__logo">
+                  <h1>MY WEATHER</h1>
+                </div>
+                <div class="nav__search">
+                  <form action="">
+                    <div class="src">
+                      <input
+                        type="text"
+                        name=""
+                        id="search"
+                        class="input_text"
+                        placeholder="Tashkent, Uzbekistan"
+                        value="tashkent"
+                      />
+                      <i class="bx bx-search ico submit"></i>
+                    </div>
+                  </form>
+                </div>
+              </div>
+           </div>
+        </div>
+    </header>
+
+    <div class="today-button">
+        <div class="container">
+            <div class="today-button-inside">
+                <a class="today" onclick="switchContent('today')">Today</a>
+                <a class="five-day" onclick="switchContent('forecast')">5-day forecast</a>
+            </div>
+        </div>
+        </div>
+
+   
+
+    <div class="main">
+        <!-- <div id="loading-content">
+            Loading...
+        </div> -->
+
+        <div id="error-content" style="display: none;">
+            <div class="error-box">
+                <div class="error-img">
+                    <img src="img/404-error.svg" alt="">
+                </div>
+
+                <div class="error-desc">
+                    <p class="error-desc-text">Qwerty could not be found.</p>
+                    <p class="error-desc-text">Please enter a different location</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="today-content">
+            <div class="main-one">
+
+                <div class="one-first-line">
+                    <p class="current-weather" style="font-weight: bold;">Current Weather</p>
+                    <p class="current-weather-date">##.##.####</p>
+                </div>
+
+                <div class="two-first-line">
+                    <div>
+                        <img src="" alt="" class="first-line-img" id="first-line-img">
+                        <p class="first-line-p" id="first-line-p">####</p>
+                    </div>
+
+                    <div class="bold">
+                        <p class="current-temp" style="font-size: 40px;">## C</p>
+                        <p class="current-feel" id="current-feel">Real feel ##</p>
+                    </div>
+
+                    <div class="current-w-description" id="current-w-description">
+                        <p class="sunrise" id="sunrise">Sunrise: </p>
+                        <p class="sunset" id="sunset">Sunset: </p>
+                        <p class="duration" id="duration">Duration: </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+                <div class="main-two">
+                    <div class="hourly">
+                        <p class="hourly-logo" id="hourly-logo">Hourly</p>
+                    </div>
+    
+                    <div class="hourly-content">
+                        <div class="hourly-labels">
+                            <div class="hourly-labels-today">
+                                <p>Today</p>
+                            </div>
+                            <div class="hourly-img">
+                                <p>   </p>
+                            </div>
+    
+                            <div class="hourly-labels-forecast">
+                                <p>Forecast</p>
+                            </div>
+    
+                            <div class="hourly-labels-temp">
+                                <p>Temp</p>
+                            </div>
+    
+                            <div class="hourly-labels-realfeel">
+                                <p>RealFeel</p>
+                            </div>
+    
+                            <div class="hourly-labels-wind">
+                                <p>Wind</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="main-three">
+                <div class="nearbly-places">
+                    <p class="hearly-places-logo">Nearbly places</p>
+                </div>
+
+                <div class="nearbly-places-content">
+
+                    <div class="cities flex-simple">
+
+                        <div class="np-name">
+                            <p class="np-city">qwerty</p>
+                        </div>
+
+                        <div class="np-temp">
+                            <img src="" alt="">
+                            <p>36C</p>
+                        </div>
+
+                    </div>
+
+                    <!-- 
+                        <div class="n-p-two flex-simple">
+                            <div class="np-two-name">
+                                <p class="np-second-city">asd</p>
+                            </div>
+
+                            <div class="np-two-temp">
+                                <img src="" alt="">
+                                <p>33C</p>
+                            </div>
+
+                        </div> -->
+                    <!-- </div> -->
+
+
+                    <!-- <div class="n-p-second-line flex">
+                        <div class="n-p-second flex-simple">
+
+                            <div class="np-second-name">
+                                <p class="np-third-city">qwerty</p>
+                            </div>
+
+                            <div class="np-second-temp">
+                                <img src="" alt="">
+                                <p>36C</p>
+                            </div>
+
+                        </div> -->
+
+                    <!-- 
+                        <div class="n-p-two flex-simple">
+                            <div class="np-two-name">
+                                <p class="np-fourth-city">asd</p>
+                            </div>
+
+                            <div class="np-two-temp">
+                                <img src="" alt="">
+                                <p>33C</p>
+                            </div>
+
+                        </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="forecast-content">
+            <div class="five-days-content">
+            </div>
+
+            <div class="selected-day">
+                <div class="hourly">
+                    <p class="hourly-logo" id="hourly-logo">Hourly</p>
+                </div>
+
+                <div class="selected-hourly-content">
+                    <div class="hourly-labels">
+                        <div class="hourly-labels-today">
+                            <p>Today</p>
+                        </div>
+
+                        <div class="hourly-labels-forecast">
+                            <p>Forecast</p>
+                        </div>
+
+                        <div class="hourly-labels-temp">
+                            <p>Temp</p>
+                        </div>
+
+                        <div class="hourly-labels-realfeel">
+                            <p>RealFeel</p>
+                        </div>
+
+                        <div class="hourly-labels-wind">
+                            <p>Wind</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="js/js.js"></script>
+</body>
+
+</html>
