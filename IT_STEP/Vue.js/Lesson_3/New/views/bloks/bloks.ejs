@@ -1,0 +1,20 @@
+<%- include('../partials/head') %>
+<h1>All Comments</h1>
+<ul class="list-group">
+  <%for (let c of contents ) {%>
+  <li class="list-group-item strong ">
+    ID: <%= c.id %>  <br />
+    Name: <b><%= c.title.toUpperCase() %></b> <br />
+    Comment: <%= c.content %> <br>
+
+    <a href="bloks/<%= c.id %>">More...</a>
+  </li>
+  <% } %>
+</ul>
+
+<a href="/bloks/new"  class="btn btn-warning mb-3 mt-2" >Creating a comment</a>
+
+<br/>
+<a href="/"  class="btn btn-dark">Back</a>
+
+<%- include('../partials/footer')%>

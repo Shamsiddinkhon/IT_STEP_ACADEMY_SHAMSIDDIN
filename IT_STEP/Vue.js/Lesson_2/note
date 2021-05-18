@@ -1,20 +1,11 @@
 
-
-
-PS C:\Users\шукуровш\Documents\GitHub\IT_STEP_ACADEMY_SHAMSIDDIN> cd .\IT_STEP\Vue.js\Lesson_2
-PS C:\Users\шукуровш\Documents\GitHub\IT_STEP_ACADEMY_SHAMSIDDIN\IT_STEP\Vue.js\Lesson_2> node index.js
-Server is running on port 3000
-
 ///////////////////////////////// dlya avto perezagruzku servera/////////////////////////////////////////////
 
 PS C:\Users\шукуровш\Documents\GitHub\IT_STEP_ACADEMY_SHAMSIDDIN\IT_STEP\Vue.js\Lesson_2> npm install nodemon --dev
-
-
-
-
-
 PS C:\Users\шукуровш\Documents\GitHub\IT_STEP_ACADEMY_SHAMSIDDIN\IT_STEP\Vue.js\Lesson_2> npm install nodemon --save-dev
+//////////////////////////////////////////////////////////////////////////////
 
+/////////////////////////////////////// ZAPUSK EGO  /////////////////////////////////////////////////////////
 
 PS C:\Users\шукуровш\Documents\GitHub\IT_STEP_ACADEMY_SHAMSIDDIN\IT_STEP\Vue.js\Lesson_2> npm run nodemon  
 
