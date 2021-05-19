@@ -1,0 +1,18 @@
+<%- include('../partials/head') %>
+
+<h1>Comment <span style="color: chartreuse;">ID:</span> <%= comment.id %></h1>
+
+<ul class="list-group">
+    <li class="list-group-item strong ">
+        <span style="font-weight: bold; font-style: italic; font-size: 2rem;"><span style="color: chartreuse;">Name:</span> <%= comment.username %></span> <br>
+        <hr style="width: 100%;">
+        <span style="font-weight: bold; font-style: italic; font-size: 2rem;"><span style="color: chartreuse;">Comment:</span> <%= comment.comment %></span>
+      </li>
+</ul>
+
+
+
+  <a href="/comments"  class="btn btn-dark mt-4 mb-4 hover">Back</a>
+
+
+<%- include('../partials/footer')%>
