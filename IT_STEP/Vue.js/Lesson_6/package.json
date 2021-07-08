@@ -1,0 +1,21 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Node JS Lesson",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"npx nodemon app.js"
+  },
+  "keywords": [
+    "Node",
+    "JS",
+    "FS",
+    "NPM"
+  ],
+  "author": "Shukurov Shamsiddinkhon <Shamsiddinkhon@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
