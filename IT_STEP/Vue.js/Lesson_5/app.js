@@ -44,25 +44,26 @@
 //   }, i * 1000);
 // }
 
-
-
 // ============= Node JS =============
 
-const http = require('http')
-const server = http.createServer((req, res)=>{
-    // console.log(req.url, req.method, req.headers); Test
-
-    res.write('<html>')
-    res.write(`<head>
-        <title>
-        My First Html In NOde JS</title>
-    </head>
-    <body>
-    <h1>Hello World!</h1>
+const http = require("http");
+const server = http.createServer((req, res) => {
+  res.write(`
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating server</title>
+</head>
+<body>
+    <h1>Server is working</h1>
     
-    </body>`)
+</body>
+</html>
+        `);
 
-    res.write('</html>')
-    res.end()
-})
-server.listen(3000)
+  res.end();
+});
+server.listen(8080);
