@@ -6,11 +6,7 @@ const fs = require('fs')
 //     else console.log('File created');
 // })
 
-// fs.writeFile('shams.txt', 'My name is Elbek', (err) => {
-//     if(err) throw err
-//     console.log("Done!");
-// })
-
+obj.json
 
 // fs.appendFile('shams.txt', '\nI am 24 years old', (err) => {
 //     if(err) throw err
