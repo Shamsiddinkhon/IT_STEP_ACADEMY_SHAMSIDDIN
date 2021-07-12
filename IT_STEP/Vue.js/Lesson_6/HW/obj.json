@@ -1,6 +1,25 @@
 {
-            "name": "Shamsiddinkhon",
-            "lastName": "Shukurov",
-            "age": 24
+
+"name": "Shukurov", 
+"lastName": "Shamsiddinkhon",
+"age": "24",
+"date": "Mon Jul 12 2021 20:30:59 GMT+0500 (Узбекистан, стандартное время)",
+"count": 0
+
+}{
+
+"name": "Murodov", 
+"lastName": "Muxriddin",
+"age": "23",
+"date": "Mon Jul 12 2021 20:30:59 GMT+0500 (Узбекистан, стандартное время)",
+"count": 0
+
+}{
+
+"name": "Murodov", 
+"lastName": "Muxriddin",
+"age": "23",
+"date": "Mon Jul 12 2021 20:30:59 GMT+0500 (Узбекистан, стандартное время)",
+"count": 0
 
 }
