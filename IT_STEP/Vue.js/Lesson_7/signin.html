@@ -64,9 +64,9 @@
         </nav>
     </header>
     <main>
-        <form>
-            <input type="email" placeholder="Login">
-            <input type="password" placeholder="Password">
+        <form action="/signin" method="POST">
+            <input type="text" placeholder="Login" name="username">
+            <input type="password" placeholder="Password" name="password">
             <button type="submit">Sign in</button>
         </form>
     </main>
