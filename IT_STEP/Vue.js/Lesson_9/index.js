@@ -102,6 +102,7 @@ const ladder = {
     return this
   },
   dec() {},
-};
+};as
 console.log(ladder.inc().inc().inc().inc().inc().inc().inc().inc().inc().inc());
 
+sadasd
