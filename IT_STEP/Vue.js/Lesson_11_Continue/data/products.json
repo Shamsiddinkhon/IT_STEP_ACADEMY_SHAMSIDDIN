@@ -1,0 +1,38 @@
+[
+  {
+    "imgUrl": "img/clothes1.jpg",
+    "title": "Blue polo",
+    "price": 20.99,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Molestiae illum dolor, cupiditate neque maiores harum ipsum nam suscipit consectetur quidem delectus atque at est iste."
+  },
+  {
+    "imgUrl": "img/clothes1.jpg",
+    "title": "Blue polo",
+    "price": 40.99,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Molestiae illum dolor, cupiditate neque maiores harum ipsum nam suscipit consectetur quidem delectus atque at est iste."
+  },
+  {
+    "imgUrl": "img/clothes1.jpg",
+    "title": "Blue polo",
+    "price": 99.99,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Molestiae illum dolor, cupiditate neque maiores harum ipsum nam suscipit consectetur quidem delectus atque at est iste."
+  },
+  {
+    "imgUrl": "img/clothes1.jpg",
+    "title": "Blue polo",
+    "price": 20.99,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Molestiae illum dolor, cupiditate neque maiores harum ipsum nam suscipit consectetur quidem delectus atque at est iste."
+  },
+  {
+    "imgUrl": "img/clothes1.jpg",
+    "title": "Blue polo",
+    "price": 40.99,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Molestiae illum dolor, cupiditate neque maiores harum ipsum nam suscipit consectetur quidem delectus atque at est iste."
+  },
+  {
+    "imgUrl": "img/clothes1.jpg",
+    "title": "Blue polo",
+    "price": 99.99,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Molestiae illum dolor, cupiditate neque maiores harum ipsum nam suscipit consectetur quidem delectus atque at est iste."
+  }
+]

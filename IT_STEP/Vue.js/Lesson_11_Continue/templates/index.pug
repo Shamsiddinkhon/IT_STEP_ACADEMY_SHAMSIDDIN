@@ -1,0 +1,27 @@
+include head 
+include header
+include footer
+doctype html
+html(lang="en")
+    head
+        +head('Online Shop')
+    body 
+        +header 
+        .container 
+            main 
+                h1 Sales
+                    span up to 70%
+            section 
+                h2 Products 
+                .cards-wrapper
+                    each prod in data   
+                        .product-card
+                            img(width="300px" src=prod.imgUrl alt="")
+                            h3 #{prod.title}
+                            p $#{prod.price}
+                            p #{prod.description}
+                            .wrapper
+                                form(action="/learnmore" method="POST") 
+                                    button(type="submit" value="learnmore") Learn more...
+                                button Add to card
+        +footer 

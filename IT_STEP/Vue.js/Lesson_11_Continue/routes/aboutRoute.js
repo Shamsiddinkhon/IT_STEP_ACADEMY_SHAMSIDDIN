@@ -1,10 +1,8 @@
 const path = require("path");
 
 const about = {
-  getAbout: (req, res) => {
-    const html = path.join(__dirname, "..", "views", "about.html");
-    res.status(200).sendFile(html);
+  about: (req, res) => {
+    res.status(200).sendFile(path.join(__dirname, "..", "views", "about.html"));
   },
 };
-
 module.exports = about;

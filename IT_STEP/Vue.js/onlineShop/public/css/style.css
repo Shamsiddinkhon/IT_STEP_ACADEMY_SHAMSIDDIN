@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #eee;
+}
+
+a {
+  color: inherit;
+}
+nav ol {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav ol a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px 30px;
+}
+ol li a:hover {
+  background-color: rgb(190, 190, 190);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+header main {
+  /* border: 1px solid black; */
+  height: 700px;
+  padding: 60px;
+  background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4LqQX?ver=fe80)
+    no-repeat 100% 50%;
+  background-size: 700px;
+  display: flex;
+  align-items: center;
+}
+h1 {
+  font-size: 45px;
+  font-weight: 300;
+}
+h2 {
+  font-size: 30px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.row{
+  display: flex;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 330px;
+  box-shadow: 0 0 5px #fc2;
+  margin-bottom: 30px;
+}
+.product-card button {
+  font-family: inherit;
+  width: 132px;
+  height: 35px;
+  border: 0;
+  background: #fc2;
+}
+.product-card button:first-child:hover {
+  color: #fc2;
+  background-color: #eee;
+  box-shadow: 0 0 5px #fc2;
+  transition: 0.5s all;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+form input {
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+  box-shadow: 0 0 5px #a7a7a7;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-family: inherit;
+}
+
+form h1 {
+  margin-bottom: 30px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 35px;
+}
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  width: 200px;
+  height: 30px;
+  padding: 5px 20px;
+  /* border: 1px solid black; */
+}
+.product-info {
+  margin-top: 20px;
+  font-weight: 500;
+}
+.btn-buy {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  background-color: #fc2;
+  border-radius: 20px;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: 700;
+  color: #fff;
+}
+.btn-buy:hover {
+  color: #fc2;
+  background-color: #fff;
+  transition: 0.5s all;
+  box-shadow: 0 0 5px #fc2;
+}
+.orders  {
+  width: 600px;
+}
+.orders td {
+  width: 400px;
+}
+.btn-order{
+  width: 600px;
+  border: 0;
+  background-color: #fc2;
+  border-radius: 20px;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: 700;
+  color: #fff;
+  margin: 20px 0;
+  height: 50px;
+}
+.btn-order:hover {
+  color: #fc2;
+  background-color: #fff;
+  transition: 0.5s all;
+  box-shadow: 0 0 5px #fc2;
+}
+.modal{
+  width: 500px;
+  height: 500px;
+  box-shadow:  0 0 10px rgb(192, 192, 192);
+  border-radius: 30px;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+}
+.hidden{
+  display: none;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #02091a;
+  padding: 70px 0;
+  margin-top: 200px;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer ul {
+  display: flex;
+  flex-direction: column;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+.about{
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 100px 500px;
+}
+.about-main{
+  height: 70vh;
+}
