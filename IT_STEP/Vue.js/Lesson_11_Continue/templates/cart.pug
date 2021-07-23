@@ -1,0 +1,30 @@
+include head 
+include header
+include footer
+doctype html
+html(lang="en")
+    head
+        +head('Cart')
+
+    body 
+        +header 
+        .container 
+            h1 Cart 
+            table 
+                tbody 
+                tr
+                    th 1
+                    td T shirt is red
+                tr
+                    th 2
+                    td Jeans is blue
+                tr
+                    th 3
+                    td more interesting
+            button.btn-order ORDER 
+            .modal.hidden
+                h3 ORDERed :)
+                button CLOSE 
+        +footer
+        
+        script(src="scripts/script.js") 
