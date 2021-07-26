@@ -1,16 +1,15 @@
-include head
-include nav
-include footer
+include includes/head
+include includes/nav
+include includes/footer
 doctype html
 html(lang="en")
-  head
-    +head("E-commerce")
+  +head('Login')
   body 
     +nav
     .container 
-        h1.login-header LOG IN PAGE
+        h1.login-header Sign in
         form.formauth(action="/auth" method="POST")
-            input(type="email" name="username" placeholder="Username")
-            input(type="password" name="password" placeholder="Password")
+            input(type="email" name="username" placeholder="Username" required)
+            input(type="password" name="password" placeholder="Password" required)
             input(type="submit" value="Sign in")
     +footer 

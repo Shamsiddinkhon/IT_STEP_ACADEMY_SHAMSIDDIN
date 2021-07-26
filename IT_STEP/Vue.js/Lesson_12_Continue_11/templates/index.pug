@@ -1,10 +1,9 @@
-include head
-include nav
-include footer
+include includes/head 
+include includes/nav
+include includes/footer
 doctype html
 html(lang="en")
-  head
-    +head("E-commerce")
+  +head("E-commerce")
   body 
     +nav
     div(class="container")
@@ -17,12 +16,12 @@ html(lang="en")
         .cards-wrapper
           each prod in products
             .product-card
-              img(width="300px" src=prod.imgUrl alt="")
-              h3 #{prod.title}
-              p $#{prod.price}
-              p #{prod.description}
+              img.card-image(width="300px" src=prod.imgUrl alt="")
+              h3.card-title #{prod.title}
+              p.card-price $#{prod.price}
+              p.card-description #{prod.description}
               .wrapper
                 form(action="/learnmore" method="POST")
-                    button(type="submit" value="learnmore") Learn more...
+                  a(href='/product').btn-link Details...
                 button Add to card
     +footer 

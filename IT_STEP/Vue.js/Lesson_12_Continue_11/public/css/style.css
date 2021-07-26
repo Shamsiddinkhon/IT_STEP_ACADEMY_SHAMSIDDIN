@@ -44,6 +44,9 @@ li a img {
 header {
   background-color: rgb(255, 255, 255);
 }
+header {
+  margin-bottom: 50px;
+}
 main {
   display: flex;
   align-items: center;
@@ -74,14 +77,34 @@ h2 {
   justify-content: space-between;
   margin: 20px;
   box-shadow: 0 0 5px rgb(104, 104, 104);
+  border-radius: 15px;
+  overflow: hidden;
 }
-.product-card button {
+.product-card button,
+.product-card .btn-link {
   width: 130px;
   background-color: rgb(141, 221, 12);
   font-family: inherit;
   border: none;
   padding: 10px 20px;
   font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.card-image {
+  width: 320px;
+}
+.card-title {
+  font-size: 25px;
+}
+.card-price {
+  font-size: 20px;
+  font-weight: 700;
 }
 .single-product button {
   width: 130px;
@@ -107,7 +130,7 @@ button:active {
   width: 300px;
   margin: 0 auto;
 }
-form input {
+form input:not(.checkbox) {
   text-align: center;
   font-family: inherit;
   padding: 8px 15px;
@@ -121,6 +144,18 @@ form input {
 }
 form input::placeholder {
   text-align: center;
+}
+.formauth .checkbox {
+  box-shadow: none;
+  margin-right: 10px;
+}
+label {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin: 10px 0 20px;
+  
 }
 
 .login-header {
