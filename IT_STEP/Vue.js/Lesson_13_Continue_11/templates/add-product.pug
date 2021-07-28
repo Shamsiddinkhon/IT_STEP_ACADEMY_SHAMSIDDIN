@@ -1,0 +1,25 @@
+include includes/head
+include includes/nav
+include includes/footer
+doctype html
+html(lang="en")
+  head
+    +head("Add-Product")
+  body 
+    +nav
+    .container
+        form(action="/admin/add-product" method="POST")
+            .form-group 
+                label.form-label(for="productTitle") TITLE 
+                input.form-control(type="text" name="productTitle" id="title")
+            .form-group 
+                label.form-label(for="productImgUrl") imgUrl 
+                input.form-control(type="text" name="productImgUrl" id="imgUrl")
+            .form-group 
+                label.form-label(for="productPrice") price 
+                input.form-control(type="text" name="productPrice" id="price")
+            .form-group 
+                label.form-label(for="productDescription") description 
+                textarea.form-control(name="description" id="productDescription" rows="10")
+            button.btn-addproduct(type="submit") PUBLISH
+    +footer 

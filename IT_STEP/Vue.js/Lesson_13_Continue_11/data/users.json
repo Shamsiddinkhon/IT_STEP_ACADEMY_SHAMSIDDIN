@@ -1,0 +1,26 @@
+[
+  {
+    "userId": 1,
+    "username": "Shamsiddinkhon@gmail.com",
+    "password": "12345678",
+    "bithDate": "1997.02.23"
+  },
+  {
+    "userId": "2bb546b3-45a7-48d5-a0d7-723474bc8215",
+    "username": "maksimumtv.uz",
+    "password": "123",
+    "fullname": "123123123"
+  },
+  {
+    "userId": "b0daf851-1cf1-46ce-b2c5-5d58b7c42b1f",
+    "username": "muxriddin.murodov@mail.ru",
+    "password": "123123123",
+    "fullname": "1231231231"
+  },
+  {
+    "userId": "a2569b5e-bf08-4e62-9cf2-286f3d8c1dd7",
+    "username": "shamsiddinkhon11",
+    "password": "123",
+    "fullname": "123"
+  }
+]

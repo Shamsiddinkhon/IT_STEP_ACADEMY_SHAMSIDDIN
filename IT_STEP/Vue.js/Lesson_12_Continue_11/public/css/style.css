@@ -16,11 +16,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+nav ul {
+  align-items: center;
+}
 ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-evenly;
 }
 
@@ -248,7 +250,7 @@ li {
   text-align: justify;
 }
 .footer {
-  background-color: #02091a;
+  background-color: #112a6b;
   padding: 70px 0;
   margin-top: 200px;
 }
