@@ -7,32 +7,30 @@ let server = http.createServer(function (req, res) {
   fs.open("obj.json", "w", (err) => {
     if (err) console.log(err);
     else console.log("File created");
-    function writeJSON(name, lastName, age, count = 0) {
-      let count = 0
-   
+
+    let count = 0;
+    function writeJSON(name, lastName, age) {
+
+
       fs.appendFile(
         "obj.json",
-        `{\n
-"name": "${name}", 
-"lastName": "${lastName}",
-"age": "${age}",
-"date": "${date}",
-"count": ${count}\n
-}` ,
-        (err,date) => {
+        `{
+    "name": "${name}", 
+    "lastName": "${lastName}",
+    "age": "${age}",
+    "date": "${date}",
+    "count": ${count++}
+},\n`,
+        (err, date) => {
+          count++;
           if (err) throw err;
           console.log("The Obj added");
         }
       );
+      return count;
     }
     writeJSON("Shukurov", "Shamsiddinkhon", 24);
-    writeJSON("Murodov", "Muxriddin", 23);
-    writeJSON("Murodov", "Muxriddin", 23);
+    writeJSON("Shukurov", "Shamsiddinkhon", 24);
   });
 });
 server.listen(3000);
-
-
-
-
-
