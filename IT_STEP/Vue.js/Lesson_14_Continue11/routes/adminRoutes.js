@@ -16,23 +16,18 @@ fs.readFile(
 );
 
 router.get("/addproduct", (req, res) => {
-  res.render("addproduct");
+  const { id } = req.params;
+  const productlist = data.find((c) => c.id === id);
+  res.render("addproduct", { productlist });
 });
 router.post("/addproduct", (req, res) => {
-  // console.log(req.body);
-  const { body } = req;
-  for (let prod in data) {
-    if (body.title === prod.title) throw new Error("The item already added");
-  }
- 
-  fs.writeFile(
-    path.join(__dirname, "..", "data", "products.json"),
-    JSON.stringify(data, null, 2),
-    (err) => {
-      if (err) throw err;
-      console.log("The File added");
-    }
-  );
+  let { title, description, imgUrl, price , qty, id = data.length } = req.body;
+  data.push({ title, description, imgUrl, price , qty, id });
+  fs.writeFileSync(
+    path.join(__dirname, "..", 'data', "products.json"),
+    JSON.stringify(data, null, 2)
+    );
+    console.log(data);
   res.redirect("/products");
 });
 

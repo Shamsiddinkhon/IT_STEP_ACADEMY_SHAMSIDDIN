@@ -2,7 +2,37 @@
   {
     "username": "Shamsiddinkhon@mail.ru",
     "password": "123",
-    "userId": 1,
+    "userId": 0,
     "bithDate": "1997.02.23"
+  },
+  {
+    "username": "Shams",
+    "password": "Shams",
+    "fullname": "Shamsiddinkhon Shukurov",
+    "userId": 1
+  },
+  {
+    "username": "Muhriddin",
+    "password": "mmm",
+    "fullname": "Muhridin Murodov",
+    "userId": 2
+  },
+  {
+    "username": "Shuk_zo65",
+    "password": "111",
+    "fullname": "Shamsiddinkhon Shukurov",
+    "userId": 3
+  },
+  {
+    "username": "Shuk_zo65s",
+    "password": "111",
+    "fullname": "Shamsiddinkhon Shukurov",
+    "userId": 4
+  },
+  {
+    "username": "Shuk_zo65s2",
+    "password": "sss",
+    "fullname": "Shamsiddinkhon Shukurov",
+    "userId": 5
   }
 ]

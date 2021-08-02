@@ -6,7 +6,7 @@ const cardHandlers = require("./routes/cardRoute");
 const page404Handlers = require("./routes/page404Route");
 const aboutHandlers = require("./routes/aboutRoute");
 const homeHandlers = require("./routes/homeRoute");
-const addproductHandlers = require("./routes/addproductRoute");
+const addproductHandlers = require("./routes/adminRoutes");
 
 const productHandlers = require("./routes/productRoute");
 const productsHandlers = require("./routes/productsRoute");
