@@ -3,36 +3,58 @@
     "imgUrl": "img/1.png",
     "title": "Laptop",
     "price": "299.99",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?"
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
+    "id": 0
   },
   {
     "imgUrl": "img/2.png",
     "title": "Laptop",
     "price": "399.99",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?"
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
+    "id": 1
   },
   {
     "imgUrl": "img/3.png",
     "title": "Laptop",
     "price": "499.99",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?"
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
+    "id": 2
   },
   {
     "imgUrl": "img/4.png",
     "title": "Laptop",
     "price": "599.99",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?"
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
+    "id": 3
   },
   {
     "imgUrl": "img/5.png",
     "title": "Laptop",
     "price": "699.99",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?"
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
+    "id": 4
   },
   {
     "imgUrl": "img/3.png",
     "title": "Laptop",
     "price": "499.99",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?"
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
+    "id": 5
+  },
+  {
+    "title": "iPhone 12 Pro Max",
+    "description": "Brand new iPhone 12 Pro Max",
+    "imgUrl": "https://res-2.cloudinary.com/grover/image/upload/e_trim/c_limit,f_auto,fl_png8.lossy,h_1280,q_auto,w_1280/v1609846562/knacy3nydduiftynb5t9.png",
+    "price": "1099.99",
+    "qty": "2",
+    "id": 6
+  },
+  {
+    "title": "asdasdas",
+    "description": "Write some text",
+    "imgUrl": "https://res-2.cloudinary.com/grover/image/upload/e_trim/c_limit,f_auto,fl_png8.lossy,h_1280,q_auto,w_1280/v1609846562/knacy3nydduiftynb5t9.png",
+    "price": "111",
+    "qty": "1",
+    "id": 7
   }
 ]
