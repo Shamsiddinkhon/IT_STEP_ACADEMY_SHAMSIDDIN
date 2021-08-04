@@ -14,3 +14,9 @@ function carousel() {
   x[myIndex - 1].style.display = "block";
   setTimeout(carousel, 2000);
 }
+const email = document.querySelector('#email')
+  console.log(email.value);
+function validateEmail(email) {
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}

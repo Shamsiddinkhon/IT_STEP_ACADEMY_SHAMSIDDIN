@@ -174,9 +174,10 @@ form input::placeholder {
 
 .login-header {
   text-align: center;
-  margin-top: 150px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
 .product-images {
   display: flex;
   flex-direction: row;

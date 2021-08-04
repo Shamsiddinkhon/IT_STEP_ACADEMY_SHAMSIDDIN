@@ -1,23 +1,27 @@
 const path = require("path");
 const fs = require("fs");
+const { v4: uuid } = require("uuid");
 
 const p = path.join(__dirname, "..", "data", "users.json");
 
 let data = null;
-fs.readFile(path.join(__dirname, "..", "data", "users.json"), (err, prods) => {
+fs.readFile(p, (err, users) => {
   if (err) throw err;
-  data = JSON.parse(prods);
+  data = JSON.parse(users);
 });
 
 module.exports = class User {
-  constructor(username, password, fullName) {
+  constructor(username, name, lastName, email, password, phone, country) {
     this.username = username;
+    this.name = name;
+    this.lastName = lastName;
+    this.email = email;
     this.password = password;
-    this.fullName = fullName;
+    this.phone = phone;
+    this.country = country;
   }
 
-
-  postRegister(bd) {
+  register(bd) {
     if (bd.password !== bd["password-repeat"])
       throw new Error("Passwords do not match");
     for (let user of data) {
@@ -26,8 +30,26 @@ module.exports = class User {
     }
     delete bd["password-repeat"];
     delete bd["agree"];
-    const { userId = data.length, username, password, fullname } = bd;
-    data.push({ username, password, fullname, userId });
+    const {
+      username,
+      name,
+      lastName,
+      email,
+      password,
+      phone,
+      country,
+      userId = uuid(),
+    } = bd;
+    data.push({
+      username,
+      name,
+      lastName,
+      email,
+      password,
+      phone: Number(bd.phone),
+      country,
+      userId,
+    });
 
     fs.writeFileSync(
       path.join(__dirname, "..", "data", "users.json"),

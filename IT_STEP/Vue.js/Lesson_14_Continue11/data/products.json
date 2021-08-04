@@ -4,42 +4,42 @@
     "title": "Laptop",
     "price": "299.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "id": 0
+    "itemId": 0
   },
   {
     "imgUrl": "img/2.png",
     "title": "Laptop",
     "price": "399.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "id": 1
+    "itemId": 1
   },
   {
     "imgUrl": "img/3.png",
     "title": "Laptop",
     "price": "499.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "id": 2
+    "itemId": 2
   },
   {
     "imgUrl": "img/4.png",
     "title": "Laptop",
     "price": "599.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "id": 3
+    "itemId": 3
   },
   {
     "imgUrl": "img/5.png",
     "title": "Laptop",
     "price": "699.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "id": 4
+    "itemId": 4
   },
   {
     "imgUrl": "img/3.png",
     "title": "Laptop",
     "price": "499.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "id": 5
+    "itemId": 5
   },
   {
     "title": "iPhone 12 Pro Max",
@@ -47,7 +47,7 @@
     "imgUrl": "https://res-2.cloudinary.com/grover/image/upload/e_trim/c_limit,f_auto,fl_png8.lossy,h_1280,q_auto,w_1280/v1609846562/knacy3nydduiftynb5t9.png",
     "price": "1099.99",
     "qty": "2",
-    "id": 6
+    "itemId": 6
   },
   {
     "title": "asdasdas",
@@ -55,6 +55,14 @@
     "imgUrl": "https://res-2.cloudinary.com/grover/image/upload/e_trim/c_limit,f_auto,fl_png8.lossy,h_1280,q_auto,w_1280/v1609846562/knacy3nydduiftynb5t9.png",
     "price": "111",
     "qty": "1",
-    "id": 7
+    "itemId": 7
+  },
+  {
+    "title": "asdasd",
+    "description": "Write some text",
+    "imgUrl": "https://prizma.uz/uploads/product/images/010101-00040/Apple_iPhone_12_Pro_Max_256GB_Graphite_5.png",
+    "price": "990.99",
+    "qty": 1,
+    "itemId": "6fcf35a5-aa44-4f58-bfb4-0314c498ee70"
   }
 ]
