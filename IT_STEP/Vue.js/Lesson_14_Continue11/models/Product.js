@@ -11,27 +11,19 @@ fs.readFile(p, (err, prods) => {
 });
 
 module.exports = class Product {
-  constructor(imgUrl, title, price, description, itemId) {
+  constructor(imgUrl, title, price,qty, description) {
     this.imgUrl = imgUrl;
     this.title = title;
     this.price = price;
+    this.qty = +Number(qty)
     this.description = description;
-    this.itemId = itemId;
+    this.id = uuid();
   }
-  add(bd) {
-    const { title, description, imgUrl, price, qty, itemId = uuid() } = bd;
-    data.push({
-      title,
-      description,
-      imgUrl,
-      price,
-      qty: Number(bd.qty),
-      itemId,
-    });
+  add() {
+    data.push(this);
     fs.writeFileSync(
       path.join(__dirname, "..", "data", "products.json"),
       JSON.stringify(data, null, 2)
     );
-    console.log(data);
   }
 };
