@@ -23,6 +23,6 @@ html(lang="en")
               p.card-price $#{prod.price}
               p.card-description #{prod.description}
               .wrapper
-                a.btn-link(href="/product") Details
+                a.btn-link(href=`/${prod.id}`) Details
                 button Add to card
     +footer 

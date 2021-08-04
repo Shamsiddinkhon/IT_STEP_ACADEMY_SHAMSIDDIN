@@ -4,19 +4,19 @@ include includes/footer
 doctype html
 html(lang="en")
   head
-    +head("E-commerce")
+    +head(`${products.title}`)
   body 
     +nav
     .container 
-        h2 Macbook Laptop
+        h2 #{products.title}
         .product-images
-            img(src="img/product1.png" width="500px" alt="")
-            img(src="img/product2.png" alt="" width="350")
-            img( src="img/product3.png" width="300" alt="")
+            img(src=products.imgUrl width="500px" alt="")
+            img(src=products.imgUrl alt="" width="350")
+            img( src=products.imgUrl width="300" alt="")
         .buy
-            p(class="price") $999.99
+            p(class="price") $#{products.price}
             button(class="btn-buy") BUY
-        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam iure in, doloribus ipsam omnis doloremque quis aut minus velit neque nesciunt molestiae eos aliquam sed mollitia facilis iusto assumenda! Laboriosam culpa distinctio earum nam quasi blanditiis quisquam, unde consectetur dicta dolore vitae sint ex! Fugit sint, adipisci inventore eligendi tempora possimus quos esse placeat totam nulla rem ex alias minima suscipit dolorem accusamus dolor libero corrupti quae est at? Asperiores, eos obcaecati. Provident esse eius voluptas illo sapiente odit amet possimus recusandae consequuntur, delectus inventore ea iste itaque neque? Minus cupiditate ipsum placeat vero eaque optio ullam quos sapiente similique!
+        p #{products.description}
         table 
             tbody
                 tr
@@ -27,5 +27,5 @@ html(lang="en")
                     td RED
                 tr
                     th PRICE
-                    td $999.99
+                    td $#{products.price}
     +footer 

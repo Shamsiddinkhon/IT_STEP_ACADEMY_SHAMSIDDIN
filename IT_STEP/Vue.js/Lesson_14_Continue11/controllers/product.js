@@ -25,8 +25,8 @@ exports.postProduct = (req, res) => {
     body.imgUrl,
     body.price,
     body.qty,
-    body.itemId
-  ).add(body);
+    body.id
+  ).add();
 
-  res.redirect("/products");
+  res.redirect("/");
 };

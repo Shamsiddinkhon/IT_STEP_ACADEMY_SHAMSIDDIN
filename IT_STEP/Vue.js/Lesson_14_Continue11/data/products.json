@@ -1,45 +1,45 @@
 [
   {
-    "imgUrl": "img/1.png",
+    "imgUrl": "/img/1.png",
     "title": "Laptop",
     "price": "299.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "itemId": 0
+    "id": "6fcf35a5-aa44-4f58-bfb4-0314c498ee70"
   },
   {
-    "imgUrl": "img/2.png",
+    "imgUrl": "/img/2.png",
     "title": "Laptop",
     "price": "399.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "itemId": 1
+    "id": "6fcf35a5-aa44-4f58-bfb4-0114c198ee70"
   },
   {
-    "imgUrl": "img/3.png",
+    "imgUrl": "/img/3.png",
     "title": "Laptop",
     "price": "499.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "itemId": 2
+    "id": "6fcf35a5-aa44-4f58-bfb4-1314c498ee70"
   },
   {
-    "imgUrl": "img/4.png",
+    "imgUrl": "/img/4.png",
     "title": "Laptop",
     "price": "599.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "itemId": 3
+    "id": "6fcf35a5-aa44-4f51-bfb4-0314c498ee70"
   },
   {
-    "imgUrl": "img/5.png",
+    "imgUrl": "/img/5.png",
     "title": "Laptop",
     "price": "699.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "itemId": 4
+    "id": "1fcf35a5-aa44-4f58-bfb4-0314c498ee70"
   },
   {
-    "imgUrl": "img/3.png",
+    "imgUrl": "/img/3.png",
     "title": "Laptop",
     "price": "499.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "itemId": 5
+    "id": "6fcf15a5-aa44-4f58-bfb4-0314c498ee70"
   },
   {
     "title": "iPhone 12 Pro Max",
@@ -47,22 +47,46 @@
     "imgUrl": "https://res-2.cloudinary.com/grover/image/upload/e_trim/c_limit,f_auto,fl_png8.lossy,h_1280,q_auto,w_1280/v1609846562/knacy3nydduiftynb5t9.png",
     "price": "1099.99",
     "qty": "2",
-    "itemId": 6
+    "id": "6fcf3515-aa44-4f58-bfb4-0314c498ee70"
   },
   {
-    "title": "asdasdas",
-    "description": "Write some text",
+    "title": "iPhone 12 Pro Max",
+    "description": "Brand new iPhone 12 Pro Max",
     "imgUrl": "https://res-2.cloudinary.com/grover/image/upload/e_trim/c_limit,f_auto,fl_png8.lossy,h_1280,q_auto,w_1280/v1609846562/knacy3nydduiftynb5t9.png",
-    "price": "111",
-    "qty": "1",
-    "itemId": 7
+    "price": "1099.99",
+    "qty": "2",
+    "id": "6fcf3515-aa44-4f58-bfb4-0314c498ee70"
   },
   {
-    "title": "asdasd",
+    "title": "iPhone 12 Pro Max",
+    "description": "Brand new iPhone 12 Pro Max",
+    "imgUrl": "https://res-2.cloudinary.com/grover/image/upload/e_trim/c_limit,f_auto,fl_png8.lossy,h_1280,q_auto,w_1280/v1609846562/knacy3nydduiftynb5t9.png",
+    "price": "1099.99",
+    "qty": "2",
+    "id": "6fcf3515-aa44-4f58-bfb4-0314c498ee70"
+  },
+  {
+    "title": "new Iphone",
+    "description": "Hello World",
+    "imgUrl": "https://prizma.uz/uploads/product/images/010101-00040/Apple_iPhone_12_Pro_Max_256GB_Graphite_5.png",
+    "price": "850",
+    "qty": 50,
+    "id": "78ff75aa-270b-481f-baf8-0ee7586338b3"
+  },
+  {
+    "title": "Sale Iphone 12 pro ",
     "description": "Write some text",
     "imgUrl": "https://prizma.uz/uploads/product/images/010101-00040/Apple_iPhone_12_Pro_Max_256GB_Graphite_5.png",
-    "price": "990.99",
+    "price": "560",
+    "qty": 3,
+    "id": "21ef39ce-cc6c-45ee-843c-e1dbffd0bedd"
+  },
+  {
+    "imgUrl": "mmm",
+    "title": "Write some text",
+    "price": "https://prizma.uz/uploads/product/images/010101-00040/Apple_iPhone_12_Pro_Max_256GB_Graphite_5.png",
     "qty": 1,
-    "itemId": "6fcf35a5-aa44-4f58-bfb4-0314c498ee70"
+    "description": "1",
+    "id": "af15e526-0c93-4f7f-8eac-61b5fb1c4170"
   }
 ]
