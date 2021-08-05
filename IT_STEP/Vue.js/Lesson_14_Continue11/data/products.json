@@ -1,92 +1,152 @@
 [
   {
     "imgUrl": "/img/1.png",
+    "imgUrls": [
+      "/img/1.png",
+      "/img/2.png",
+      "/img/3.png"
+    ],
     "title": "Laptop",
     "price": "299.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "id": "6fcf35a5-aa44-4f58-bfb4-0314c498ee70"
+    "qty": 10,
+    "id": "6fcf35a5-aa44-4f58-bfb4-0314c498ee70",
+    "vendorCode": 121,
+    "colog": "Blue",
+    "sizes": [
+      {
+        "size": "S",
+        "qty": 2
+      },
+      {
+        "size": "XS",
+        "qty": 8
+      }
+    ]
   },
   {
     "imgUrl": "/img/2.png",
+    "imgUrls": [
+      "/img/2.png",
+      "/img/3.png",
+      "/img/1.png"
+    ],
     "title": "Laptop",
     "price": "399.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "id": "6fcf35a5-aa44-4f58-bfb4-0114c198ee70"
+    "qty": 10,
+    "id": "6fcf35a5-aa44-4f58-bfb4-0114c198ee70",
+    "vendorCode": 122,
+    "color": "White",
+    "sizes": [
+      {
+        "size": "S",
+        "qty": 2
+      },
+      {
+        "size": "XS",
+        "qty": 8
+      }
+    ]
   },
   {
     "imgUrl": "/img/3.png",
+    "imgUrls": [
+      "/img/3.png",
+      "/img/2.png",
+      "/img/1.png"
+    ],
     "title": "Laptop",
     "price": "499.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "id": "6fcf35a5-aa44-4f58-bfb4-1314c498ee70"
+    "qty": 10,
+    "id": "6fcf35a5-aa44-4f58-bfb4-1314c498ee70",
+    "vendorCode": 123,
+    "color": "Black",
+    "sizes": [
+      {
+        "size": "S",
+        "qty": 2
+      },
+      {
+        "size": "XS",
+        "qty": 8
+      }
+    ]
   },
   {
     "imgUrl": "/img/4.png",
+    "imgUrls": [
+      "/img/4.png",
+      "/img/4.png",
+      "/img/4.png"
+    ],
     "title": "Laptop",
     "price": "599.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "id": "6fcf35a5-aa44-4f51-bfb4-0314c498ee70"
+    "qty": 10,
+    "id": "6fcf35a5-aa44-4f51-bfb4-0314c498ee70",
+    "vendorCode": 124,
+    "color": "Yello",
+    "sizes": [
+      {
+        "size": "S",
+        "qty": 2
+      },
+      {
+        "size": "XS",
+        "qty": 8
+      }
+    ]
   },
   {
     "imgUrl": "/img/5.png",
+    "imgUrls": [
+      "/img/4.png",
+      "/img/4.png",
+      "/img/4.png"
+    ],
     "title": "Laptop",
     "price": "699.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "id": "1fcf35a5-aa44-4f58-bfb4-0314c498ee70"
+    "qty": 10,
+    "id": "1fcf35a5-aa44-4f58-bfb4-0314c498ee70",
+    "vendorCode": 125,
+    "color": "Gray",
+    "sizes": [
+      {
+        "size": "S",
+        "qty": 2
+      },
+      {
+        "size": "XS",
+        "qty": 8
+      }
+    ]
   },
   {
     "imgUrl": "/img/3.png",
+    "imgUrls": [
+      "/img/3.png",
+      "/img/3.png",
+      "/img/3.png"
+    ],
     "title": "Laptop",
     "price": "499.99",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus quos ipsa dolores sunt dolore natus ea fugit nemo saepe?",
-    "id": "6fcf15a5-aa44-4f58-bfb4-0314c498ee70"
-  },
-  {
-    "title": "iPhone 12 Pro Max",
-    "description": "Brand new iPhone 12 Pro Max",
-    "imgUrl": "https://res-2.cloudinary.com/grover/image/upload/e_trim/c_limit,f_auto,fl_png8.lossy,h_1280,q_auto,w_1280/v1609846562/knacy3nydduiftynb5t9.png",
-    "price": "1099.99",
-    "qty": "2",
-    "id": "6fcf3515-aa44-4f58-bfb4-0314c498ee70"
-  },
-  {
-    "title": "iPhone 12 Pro Max",
-    "description": "Brand new iPhone 12 Pro Max",
-    "imgUrl": "https://res-2.cloudinary.com/grover/image/upload/e_trim/c_limit,f_auto,fl_png8.lossy,h_1280,q_auto,w_1280/v1609846562/knacy3nydduiftynb5t9.png",
-    "price": "1099.99",
-    "qty": "2",
-    "id": "6fcf3515-aa44-4f58-bfb4-0314c498ee70"
-  },
-  {
-    "title": "iPhone 12 Pro Max",
-    "description": "Brand new iPhone 12 Pro Max",
-    "imgUrl": "https://res-2.cloudinary.com/grover/image/upload/e_trim/c_limit,f_auto,fl_png8.lossy,h_1280,q_auto,w_1280/v1609846562/knacy3nydduiftynb5t9.png",
-    "price": "1099.99",
-    "qty": "2",
-    "id": "6fcf3515-aa44-4f58-bfb4-0314c498ee70"
-  },
-  {
-    "title": "new Iphone",
-    "description": "Hello World",
-    "imgUrl": "https://prizma.uz/uploads/product/images/010101-00040/Apple_iPhone_12_Pro_Max_256GB_Graphite_5.png",
-    "price": "850",
-    "qty": 50,
-    "id": "78ff75aa-270b-481f-baf8-0ee7586338b3"
-  },
-  {
-    "title": "Sale Iphone 12 pro ",
-    "description": "Write some text",
-    "imgUrl": "https://prizma.uz/uploads/product/images/010101-00040/Apple_iPhone_12_Pro_Max_256GB_Graphite_5.png",
-    "price": "560",
-    "qty": 3,
-    "id": "21ef39ce-cc6c-45ee-843c-e1dbffd0bedd"
-  },
-  {
-    "imgUrl": "mmm",
-    "title": "Write some text",
-    "price": "https://prizma.uz/uploads/product/images/010101-00040/Apple_iPhone_12_Pro_Max_256GB_Graphite_5.png",
-    "qty": 1,
-    "description": "1",
-    "id": "af15e526-0c93-4f7f-8eac-61b5fb1c4170"
+    "qty": 10,
+    "id": "6fcf15a5-aa44-4f58-bfb4-0314c498ee70",
+    "vendorCode": 126,
+    "color": "Blue",
+    "sizes": [
+      {
+        "size": "S",
+        "qty": 2
+      },
+      {
+        "size": "XS",
+        "qty": 8
+      }
+    ]
   }
 ]

@@ -4,27 +4,33 @@ include includes/footer
 doctype html
 html(lang="en")
   head
-    +head(`${products.title}`)
+    +head('Product Details')
   body 
     +nav
     .container 
-        h2 #{products.title}
+        h2 #{'Product Details'}
         .product-images
-            img(src=products.imgUrl width="500px" alt="")
-            img(src=products.imgUrl alt="" width="350")
-            img( src=products.imgUrl width="300" alt="")
+            img(src=products.imgUrls[0] width="500px" alt="")
+            img(src=products.imgUrls[1] alt="" width="350")
+            img( src=products.imgUrls[2] width="300" alt="")
         .buy
             p(class="price") $#{products.price}
+            p 
+                b Артикул: #{products.vendorCode}
             button(class="btn-buy") BUY
         p #{products.description}
         table 
             tbody
                 tr
                     th SIZE
-                    td S
+                    td 
+                        each size in products.sizes    
+                            b #{size.size + ' '}
+                            span #{size.qty} шт.
+                            br
                 tr
                     th COLOUR
-                    td RED
+                    td #{products.color}
                 tr
                     th PRICE
                     td $#{products.price}
