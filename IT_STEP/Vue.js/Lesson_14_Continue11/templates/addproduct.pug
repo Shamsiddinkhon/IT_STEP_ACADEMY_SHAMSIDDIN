@@ -15,14 +15,14 @@ html(lang="en")
             input.form-control(type="text" name="title" id="title" required)
           .form-group 
             label.form-label(for="imgUrl") imgUrl 
-            input.form-control(type="text" name="imgUrl" id="imgUrl" placeholder="Main Img" required)
-            input.form-control(type="text" name="imgUrl" id="imgUrl" placeholder="Second Img" required)
-            input.form-control(type="text" name="imgUrl" id="imgUrl" placeholder="Third Img" required)
+            input.form-control(type="text" name="mainImgUrl" id="imgUrl" placeholder="Main Img" required)
+            input.form-control(type="text" name="secondImgUrl" id="imgUrl" placeholder="Second Img" required)
+            input.form-control(type="text" name="thirdImgUrl" id="imgUrl" placeholder="Third Img" required)
           .form-group 
             label.form-label(for="price") price 
             input.form-control(type="text" name="price" id="price" required)
           .form-group 
-            label.form-label(for="vendorCode") price 
+            label.form-label(for="vendorCode") Vendor COde
             input.form-control(type="text" name="vendorCode" id="vendorCode" required)
           //- .form-group 
           //-   label.form-label(for="qty") QTY
@@ -35,5 +35,5 @@ html(lang="en")
           .form-group 
             label.form-label(for="description") Description 
             textarea.form-control(name="description" id="description" rows="10" required) Write some text
-            button.btn-addproduct(type="submit") Upload
+            button.btn-addproduct.submit(type="submit") Upload
     +footer 
