@@ -686,7 +686,7 @@ select {
   outline: none;
 }
 
-.form-controls{
+.form-controls {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
@@ -700,4 +700,23 @@ select {
   appearance: none;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.block {
+  background-color: red;
+}
+.deleteElem {
+  font-size: 2rem;
+  color: red;
+  cursor: pointer;
+  position: absolute;
+  top: 4px;
+  left: 360px;
+  transition: 0.5s all;
+  z-index: 999;
+}
+.deleteElem:hover {
+  transform: rotate(90deg);
+}
+.rel {
+  position: relative;
 }
