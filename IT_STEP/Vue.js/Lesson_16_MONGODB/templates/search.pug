@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../css/style.css")
+        title Document
+    body 
+        .container 
+            form(action="/search" method="POST")
+                .form-content
+                    .form-group 
+                        label.form-label(for="title") Title of Book
+                        input.form-control(type="text" name="title" id="title" required)
+                    //- .form-group 
+                    //-     label.form-label(for="select") Select
+                    //-     select.form-control(name="select")
+                    //-         option(value="title") Title of Book 
+                    //-         option(value="description") Description of Book
+                    .form-group 
+                        button.btn-addproduct.submit(type="submit") Upload
