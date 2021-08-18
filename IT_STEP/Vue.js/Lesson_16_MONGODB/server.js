@@ -15,27 +15,35 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 let db = null;
-let users = null
-mongoClient.connect((err, user) => {
+let books = null;
+mongoClient.connect((err, book) => {
   if (err) throw err;
-  db = user.db(dbName);
-  users = db.collection("users");
+  db = book.db(dbName);
+  books = db.collection("books");
 });
-
-
 app.get("/", (req, res) => {
-  res.status(200).sendFile(path.join(__dirname, "index.html"));
+  res.render("addBook");
 });
-
-app.post("/add-user", (req, res) => {
+app.post("/addbook", (req, res) => {
   const { body } = req;
-  console.log(body);
-  users.insertOne({ ...body }, (err, result) => {
-    console.log(result);
+  // console.log(body);
+  books.insertOne({ ...body }, (err, result) => {
+    // console.log(result);
   });
   res.redirect("/");
 });
+app.get("/search", (req, res) => {
+  res.render("search", {});
+});
+app.post("/search", (req, res) => {
+  const { body } = req;
+  books.find({ title: body.title }).forEach((book) => {
+    console.log(book);
+  });
+  res.redirect("/search");
+});
+
 app.use("*", (req, res) => {
-  res.status(404);
+  res.status(404).render("page404");
 });
 app.listen(3000);
